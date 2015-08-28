@@ -1,0 +1,6 @@
+framework module Pods_Harrier_Tests {
+  umbrella header "Pods-Harrier_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,14 @@
+PODS:
+  - Harrier (0.1.0)
+
+DEPENDENCIES:
+  - Harrier (from `../`)
+
+EXTERNAL SOURCES:
+  Harrier:
+    :path: ../
+
+SPEC CHECKSUMS:
+  Harrier: ec7ba0ff44f53251e460e34d4fc3a079bb6d1c64
+
+COCOAPODS: 0.38.2
