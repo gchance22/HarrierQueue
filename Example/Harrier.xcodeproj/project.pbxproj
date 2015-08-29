@@ -15,7 +15,7 @@
 		3C80ECEA86B359EDEC6362D7 /* Pods-Harrier_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Harrier_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Harrier_Tests/Pods-Harrier_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		45A4D2338566BCEFAEFCF2A7 /* Pods-Harrier_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Harrier_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Harrier_Tests/Pods-Harrier_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		5608AC72DA92F99A3B3464FC /* Harrier.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Harrier.podspec; path = ../Harrier.podspec; sourceTree = "<group>"; };
-		607FACE51AFB9204008FA782 /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = Tests.xctest; path = Harrier_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		607FACE51AFB9204008FA782 /* Harrier_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Harrier_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		7286C47D25E056E7F3BB65A0 /* Pods_Harrier_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Harrier_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -66,7 +66,7 @@
 		607FACD11AFB9204008FA782 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				607FACE51AFB9204008FA782 /* Tests.xctest */,
+				607FACE51AFB9204008FA782 /* Harrier_Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -118,7 +118,7 @@
 			);
 			name = Harrier_Tests;
 			productName = Tests;
-			productReference = 607FACE51AFB9204008FA782 /* Tests.xctest */;
+			productReference = 607FACE51AFB9204008FA782 /* Harrier_Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
