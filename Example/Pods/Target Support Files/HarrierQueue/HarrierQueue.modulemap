@@ -1,0 +1,6 @@
+framework module HarrierQueue {
+  umbrella header "HarrierQueue-umbrella.h"
+
+  export *
+  module * { export * }
+}

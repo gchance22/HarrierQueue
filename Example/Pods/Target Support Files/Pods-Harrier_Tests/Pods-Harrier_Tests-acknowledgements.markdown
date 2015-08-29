@@ -1,7 +1,7 @@
 # Acknowledgements
 This application makes use of the following third party libraries:
 
-## Harrier
+## HarrierQueue
 
 Copyright (c) 2015 gchance22 <graham@doublebluesports.com>
 

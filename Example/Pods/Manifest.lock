@@ -1,14 +1,14 @@
 PODS:
-  - Harrier (0.1.0)
+  - HarrierQueue (1.0.0)
 
 DEPENDENCIES:
-  - Harrier (from `../`)
+  - HarrierQueue (from `~/My Pods/HarrierQueue`)
 
 EXTERNAL SOURCES:
-  Harrier:
-    :path: ../
+  HarrierQueue:
+    :path: ~/My Pods/HarrierQueue
 
 SPEC CHECKSUMS:
-  Harrier: ec7ba0ff44f53251e460e34d4fc3a079bb6d1c64
+  HarrierQueue: d01a6495ffbb33c2359ca21177a9ab833de81e38
 
 COCOAPODS: 0.38.2
