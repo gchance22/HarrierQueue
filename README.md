@@ -22,7 +22,7 @@ pod "Harrier"
 
 ## Author
 
-gchance22, graham@doublebluesports.com
+Graham Chance
 
 ## License
 
