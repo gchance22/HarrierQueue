@@ -8,83 +8,81 @@
 
 import Foundation
 
+
+let kNoRetryLimit = -1
+
+public enum HarrierTaskStatus: String {
+    case Waiting = "Waiting"
+    case Running = "Running"
+    case Done    = "Success"
+}
+
 public enum HarrierTaskCompletionStatus: String {
-    case Incomplete = "Incomplete",
-    Success = "Success",
-    Failure = "Failure",
-    Abandon = "Abandon",
-    Canceled = "Canceled"
+    case Success = "Success"
+    case Failed = "Failed"
+    case Abandon = "Abandon"
 }
 
 
+public protocol HarrierTaskDelegate {
+    func taskDidCompleteWithStatus(task: HarrierTask, status: HarrierTaskCompletionStatus)
+}
 
-public class HarrierTask: NSOperation {
+
+public class HarrierTask: Equatable {
     
+    private var status: HarrierTaskStatus?
+    
+    private var delegate: HarrierTaskDelegate?
+    
+    /// The number of times the task has failed.
+    internal var failCount: Int
+
+    /// The name of the task. Not required. Note it is used in the uniqueIdentifier.
+    public let name: String?
     
     /// The priority measurement that ranks above all others. 0 (low priority) - infinity (high priority)
-    public let basePriority: Int
+    public let priorityLevel: Int
     
+    /// The date the task was first initialized.
     public let dateCreated: NSTimeInterval
     
-    public var retryCount: Int
+    /// The number of times the task can be retried before it is abandoned.
+    public var retryLimit: Int
     
-    public let taskAttributes: [String: String]
+    /// Any data or information that the task holds.
+    public let data: [String: AnyObject]
     
-    private var _finished = false
-    private var _executing = false
-    private var _completionStatus: HarrierTaskCompletionStatus?
+    /// The soonest the task can be executed.
+    public var availabilityDate: NSDate
     
-    public var completionStatus: HarrierTaskCompletionStatus? {
-        return _completionStatus
-    }
-    
-    override public var executing: Bool {
-        get { return _executing }
-        set {
-            willChangeValueForKey("isExecuting")
-            _executing = newValue
-            didChangeValueForKey("isExecuting")
-        }
-    }
-    
-    override public var finished:Bool {
-        get { return _finished }
-        set {
-            willChangeValueForKey("isFinished")
-            _finished = newValue
-            didChangeValueForKey("isFinished")
-        }
-    }
     
     public var uniqueIdentifier: String {
-        var identifier = "HarrierTask"
-        for (key, value) in taskAttributes {
-            identifier = identifier + "-\(key):\(value)"
+        var identifier = ""
+        if let taskName = name { identifier += taskName }
+        for (key, value) in data {
+            identifier += "-\(key):\(value.stringValue)"
         }
         return identifier
     }
     
-    public init(basePriority: Int, taskAttributes: [String: String]) {
-        self.basePriority = basePriority
-        self.dateCreated = NSDate().timeIntervalSince1970
-        self.retryCount = 0
-        self.taskAttributes = taskAttributes
-        super.init()
+    public init(name: String?, priority: Int, taskAttributes: [String: String], retryLimit: Int, availabilityDate: NSDate) {
+        self.name             = name
+        self.priorityLevel    = priority
+        self.data   = taskAttributes
+        self.retryLimit       = retryLimit
+        self.availabilityDate = availabilityDate
+        self.dateCreated      = NSDate().timeIntervalSince1970
+        self.failCount        = 0
     }
     
     public func isHigherPriority(thanTask other: HarrierTask) -> Bool {
-        return basePriority > other.basePriority || (basePriority == other.basePriority && retryCount < other.retryCount && dateCreated < other.dateCreated)
+        return priorityLevel > other.priorityLevel || (priorityLevel == other.priorityLevel && failCount < other.failCount && dateCreated < other.dateCreated)
     }
     
-    public override func cancel() {
-        super.cancel()
-        _completionStatus = .Canceled
-        finished = true
-    }
-    
-    public func completeWithStatus(status: HarrierTaskCompletionStatus) {
-        _completionStatus = status
-        finished = true
+    public func completeWithStatus(completionStatus: HarrierTaskCompletionStatus) {
+        self.status = .Done
+        delegate?.taskDidCompleteWithStatus(self, status: completionStatus)
     }
     
 }

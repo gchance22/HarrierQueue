@@ -36,5 +36,5 @@ Pod::Spec.new do |s|
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-   s.dependency 'FMDB'
+    s.dependency 'FMDB', :git => 'https://github.com/ccgus/fmdb.git', :commit => '66e492a6de51b9077dfcbd6f4646130151714f9c' # Use Swift compatible FMDB
 end
