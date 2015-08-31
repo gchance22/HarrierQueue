@@ -1,0 +1,21 @@
+PODS:
+  - FMDB (2.5):
+    - FMDB/standard (= 2.5)
+  - FMDB/common (2.5)
+  - FMDB/standard (2.5):
+    - FMDB/common
+  - HarrierQueue (1.0.0):
+    - FMDB
+
+DEPENDENCIES:
+  - HarrierQueue (from `~/My Pods/HarrierQueue`)
+
+EXTERNAL SOURCES:
+  HarrierQueue:
+    :path: ~/My Pods/HarrierQueue
+
+SPEC CHECKSUMS:
+  FMDB: 96e8f1bcc1329e269330f99770ad4285d9003e52
+  HarrierQueue: 3a842538ea701e5f8ab864f44204fbf7eb4a906b
+
+COCOAPODS: 0.38.2
