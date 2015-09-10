@@ -52,10 +52,8 @@ code_sign_if_enabled() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
-  install_framework 'Pods-Harrier_Tests/FMDB.framework'
   install_framework 'Pods-Harrier_Tests/HarrierQueue.framework'
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
-  install_framework 'Pods-Harrier_Tests/FMDB.framework'
   install_framework 'Pods-Harrier_Tests/HarrierQueue.framework'
 fi

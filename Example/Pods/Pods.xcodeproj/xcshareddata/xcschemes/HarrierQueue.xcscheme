@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "D39C431908B40AF8FE6031AD"
+               BlueprintIdentifier = "6461687091C982E439DC5F28"
                BuildableName = "HarrierQueue.framework"
                BlueprintName = "HarrierQueue"
                ReferencedContainer = "container:Pods.xcodeproj">

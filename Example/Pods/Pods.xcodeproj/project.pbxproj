@@ -7,128 +7,70 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		05C19EF5157DFE880C3FED8B14C1C936 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = C0569A35F52716A51E259899BCAE3C17 /* FMDatabasePool.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		29DDAE179909002914A43E4AFF71E0A1 /* HarrierQueueDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53579021E0E232F8DC69BB9C144D03E /* HarrierQueueDatabase.swift */; };
-		2DB3E6FF2E2D6B477FC760B19ABC70B3 /* FMDatabase.h in Headers */ = {isa = PBXBuildFile; fileRef = 74EF260E942A1B8A206C495E3F6C50AA /* FMDatabase.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		34CA290DA9BC7BE0DA4C1EBAB9C215E6 /* FMDB-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6A70F3154100A0244A127DE71718E04E /* FMDB-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3B189E5ABC0C7E2B0030372DCF2D085F /* Pods-Harrier_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0053119F499B7699619D4A7DA50C04B7 /* Pods-Harrier_Tests-dummy.m */; };
-		4053BD542D697CDA141917D8020C6364 /* FMResultSet.h in Headers */ = {isa = PBXBuildFile; fileRef = 2EC097B8DDF0E778322BD3D175626447 /* FMResultSet.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		423F4462819CD14F223656457912ED0D /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FC60F60A1FA17316487871C29E4BED3 /* FMResultSet.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		4C7F6016530EC50251AF52336EA28AA9 /* FMDB-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B0CE268F805AD8F09A1F77CA03CB06D8 /* FMDB-dummy.m */; };
-		5025AA411F946B7EBDCE36437AEC4DC2 /* HarrierQueue-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DC45A1C7AF04083057995B567C0A470 /* HarrierQueue-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		50A36EC58639C6D53450DACD9BE1B5C5 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = CC7CE1AE6D53B1DCFDD240247D64A3DD /* FMDatabaseQueue.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		5228EF70C1C2D8BD7BEF391D95E99F01 /* FMDatabasePool.h in Headers */ = {isa = PBXBuildFile; fileRef = 129531EB4AA1E7AB5E95829B52727901 /* FMDatabasePool.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		55BC58FFEFC7815C9176611B6DB0A61A /* Pods-Harrier_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C66602CACC39417528ED54FC2217C690 /* Pods-Harrier_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5F52448AE65AE74AEA781B6E16EBB381 /* HarrierQueue-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 44F6E9597D9F784756D1C1F1A307213C /* HarrierQueue-dummy.m */; };
-		6DC8CF9AD82AD5A31792E58308FF4EA2 /* HarrierTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F18AAD67411E93B9C3187CD309981B3 /* HarrierTask.swift */; };
-		704C59C685C4B9CCA3893A57FE3DEE94 /* FMDatabaseAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 423C3496083DD7DF58906CD9534297B6 /* FMDatabaseAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		973A90180DE1E98ADFF2D1E8C593CE0C /* FMDB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35A30B39BEA13671E0E9F18961DEFC7B /* FMDB.framework */; };
-		A4130A38BC187DFCD91FA83F965FD93E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93654E313767CD2BD7D881CA24B4545A /* Foundation.framework */; };
-		B35C305FD22DC26B6A99F187231D9C3D /* HarrierQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B2E49147FF614AEF4420A1223BDD142 /* HarrierQueue.swift */; };
-		C005207F9D16BF9C7CE5408D39C23A28 /* FMDB.h in Headers */ = {isa = PBXBuildFile; fileRef = E8749806207E66D7FEEA65F28D815513 /* FMDB.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C8D434CDBD59A5B5E8D28187288CFDF8 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = C48FA0FBFBE87BC1A5128C0CF07149D1 /* FMDatabase.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		CF73C37103F8F9BF7F91C36EBBA881AD /* HarrierQueueDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82197E6604F8B27A8740C3DDBC4280E /* HarrierQueueDelegate.swift */; };
-		D067B092483796771935B6CBC7EEDAB6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93654E313767CD2BD7D881CA24B4545A /* Foundation.framework */; };
-		D23B41D805F632D40313275097022D9E /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 1916B0D1E4F1CBE590AF4304279C441F /* FMDatabaseAdditions.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		F5BC6F06F7A7F8D0A0F378F8CE8CBD62 /* FMDatabaseQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = AF22211047FB74D3EB7EE60C7A6AE281 /* FMDatabaseQueue.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FDE09CEF23AEEFD79876DEA0C6A088E6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93654E313767CD2BD7D881CA24B4545A /* Foundation.framework */; };
+		063758A9540F81AF58D97F59540DA447 /* HarrierQueue-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D8873551782DB1B6524B16CF624A18B /* HarrierQueue-dummy.m */; };
+		09994601FB57DEC07C2572781AF130D9 /* Pods-Harrier_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B0441C7A2FFDFF12EF5F0FCB31183D1B /* Pods-Harrier_Tests-dummy.m */; };
+		4441F57CAAF7F375C80937500822E141 /* HarrierQueueDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8D616B66F4770B95CD79BF5A62923C0 /* HarrierQueueDatabase.swift */; };
+		6D4E53C997BA3C4E7E46F956D99FEF90 /* HarrierQueueDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAFDDB16BE81BD1C6E151EA2BF011F4 /* HarrierQueueDelegate.swift */; };
+		727F8CCC88A1423C88DF9950F1FC4E28 /* Pods-Harrier_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D81874915E1F9A37E41B0BA019EF5092 /* Pods-Harrier_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		873C9DB383E65A554637FC29FEE8D25B /* HarrierQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D57E0D395EA2E78EFA10846222592F /* HarrierQueue.swift */; };
+		AA79CB7D9317FE11E032BD73446EF7BB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2705C780A37E677F862E72EF1507C32F /* Foundation.framework */; };
+		B14AFA6ED59FBF4B25AD8FAF0ED32AB3 /* HarrierTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1183000D3AF1D605EECBA6CA04E7E8 /* HarrierTask.swift */; };
+		C5D4DF61FB7DC60C2B25BB8A7D54B847 /* HarrierQueue-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 162C8526DCA72EA672C3EE529589D2C8 /* HarrierQueue-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DF97D600530900B0A2FB295329D5F2EF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2705C780A37E677F862E72EF1507C32F /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		619A64AD5763FFEF2A427392D7B7858C /* PBXContainerItemProxy */ = {
+		3C701722C1ACAB597F3F3D77AEC725A6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 2836BB0395EF52780F55C0B5FD04739E;
+			remoteGlobalIDString = B632481411CCE8F73448C74F74032E1E;
 			remoteInfo = HarrierQueue;
-		};
-		79B60D7E22214DCCFDA0873D89156CA5 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = E6034B34F139FF6CDD7B5BDEA4B4190A;
-			remoteInfo = FMDB;
-		};
-		9927572FD8131B0F32C85FD1319AC9B3 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = E6034B34F139FF6CDD7B5BDEA4B4190A;
-			remoteInfo = FMDB;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0053119F499B7699619D4A7DA50C04B7 /* Pods-Harrier_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Harrier_Tests-dummy.m"; sourceTree = "<group>"; };
-		0F18AAD67411E93B9C3187CD309981B3 /* HarrierTask.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HarrierTask.swift; sourceTree = "<group>"; };
-		129531EB4AA1E7AB5E95829B52727901 /* FMDatabasePool.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMDatabasePool.h; path = src/fmdb/FMDatabasePool.h; sourceTree = "<group>"; };
-		1916B0D1E4F1CBE590AF4304279C441F /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FMDatabaseAdditions.m; path = src/fmdb/FMDatabaseAdditions.m; sourceTree = "<group>"; };
-		1B2E49147FF614AEF4420A1223BDD142 /* HarrierQueue.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HarrierQueue.swift; sourceTree = "<group>"; };
-		1C87E9AD05187C40A7F654F397C26666 /* HarrierQueue.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HarrierQueue.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2BED5A302C9D75ED65E29A2CC949C995 /* FMDB.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = FMDB.modulemap; sourceTree = "<group>"; };
+		0FE9DCDA973919FF040053752618125E /* Pods-Harrier_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Harrier_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		162C8526DCA72EA672C3EE529589D2C8 /* HarrierQueue-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HarrierQueue-umbrella.h"; sourceTree = "<group>"; };
+		1C1183000D3AF1D605EECBA6CA04E7E8 /* HarrierTask.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HarrierTask.swift; sourceTree = "<group>"; };
+		2705C780A37E677F862E72EF1507C32F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		2CE8AF1C747698E43D26222B9DCED543 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2DC45A1C7AF04083057995B567C0A470 /* HarrierQueue-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HarrierQueue-umbrella.h"; sourceTree = "<group>"; };
-		2EC097B8DDF0E778322BD3D175626447 /* FMResultSet.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMResultSet.h; path = src/fmdb/FMResultSet.h; sourceTree = "<group>"; };
-		2FC60F60A1FA17316487871C29E4BED3 /* FMResultSet.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FMResultSet.m; path = src/fmdb/FMResultSet.m; sourceTree = "<group>"; };
-		35A30B39BEA13671E0E9F18961DEFC7B /* FMDB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FMDB.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		37FB25C7BF1350921B4EB0BC6BAF7664 /* FMDB-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "FMDB-Private.xcconfig"; sourceTree = "<group>"; };
-		41E24A2AA5755B0191B4FFDF5813DF57 /* FMDB.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FMDB.xcconfig; sourceTree = "<group>"; };
-		423C3496083DD7DF58906CD9534297B6 /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMDatabaseAdditions.h; path = src/fmdb/FMDatabaseAdditions.h; sourceTree = "<group>"; };
-		44F6E9597D9F784756D1C1F1A307213C /* HarrierQueue-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "HarrierQueue-dummy.m"; sourceTree = "<group>"; };
-		4D51D1F2BC4E908A5B8CA50A972C9221 /* FMDB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FMDB.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D8873551782DB1B6524B16CF624A18B /* HarrierQueue-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "HarrierQueue-dummy.m"; sourceTree = "<group>"; };
 		528DF79052CA771FF257A0F11C824C7E /* Pods-Harrier_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Harrier_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		5C2DA36ED2EEAE0FBC14A6BCB951B945 /* Pods-Harrier_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Harrier_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		5D4BD32EB1231FAD0E2DF4C3A01C102F /* HarrierQueue-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HarrierQueue-prefix.pch"; sourceTree = "<group>"; };
-		6A70F3154100A0244A127DE71718E04E /* FMDB-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FMDB-umbrella.h"; sourceTree = "<group>"; };
-		6C17193D0ABF1B4914089676FFFE19AD /* Pods-Harrier_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Harrier_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		74EF260E942A1B8A206C495E3F6C50AA /* FMDatabase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMDatabase.h; path = src/fmdb/FMDatabase.h; sourceTree = "<group>"; };
 		7E6ABD97D482885C8DFB90B7DBB1537E /* HarrierQueue.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = HarrierQueue.modulemap; sourceTree = "<group>"; };
+		82ACA3CC16738BC21C139210DD032CC6 /* HarrierQueue-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "HarrierQueue-Private.xcconfig"; sourceTree = "<group>"; };
 		83AA1CC48DFCC019DA3FC990EDEDA763 /* Pods-Harrier_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Harrier_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		842CA6D0D99CFB246D4D6E0BDA59FFF8 /* HarrierQueue.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HarrierQueue.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		88D57E0D395EA2E78EFA10846222592F /* HarrierQueue.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HarrierQueue.swift; sourceTree = "<group>"; };
 		8BECFD09C843A5FE722AF824D4AF893D /* Pods-Harrier_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Harrier_Tests-resources.sh"; sourceTree = "<group>"; };
-		93654E313767CD2BD7D881CA24B4545A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		9DA0B4CD1FD39AB4AAEA8817C4022550 /* Pods-Harrier_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Harrier_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		A3D1741A7E14E0810C65FC37AE4180D9 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AF22211047FB74D3EB7EE60C7A6AE281 /* FMDatabaseQueue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMDatabaseQueue.h; path = src/fmdb/FMDatabaseQueue.h; sourceTree = "<group>"; };
-		B0CE268F805AD8F09A1F77CA03CB06D8 /* FMDB-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FMDB-dummy.m"; sourceTree = "<group>"; };
-		B311AD74520FF47E111B8C4CD0295097 /* FMDB-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FMDB-prefix.pch"; sourceTree = "<group>"; };
-		B53579021E0E232F8DC69BB9C144D03E /* HarrierQueueDatabase.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HarrierQueueDatabase.swift; sourceTree = "<group>"; };
-		B82197E6604F8B27A8740C3DDBC4280E /* HarrierQueueDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HarrierQueueDelegate.swift; sourceTree = "<group>"; };
+		B0441C7A2FFDFF12EF5F0FCB31183D1B /* Pods-Harrier_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Harrier_Tests-dummy.m"; sourceTree = "<group>"; };
+		B8D616B66F4770B95CD79BF5A62923C0 /* HarrierQueueDatabase.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HarrierQueueDatabase.swift; sourceTree = "<group>"; };
 		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		BAE6CFBB7431CD343D495C7E1F453E28 /* Pods-Harrier_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Harrier_Tests.modulemap"; sourceTree = "<group>"; };
-		C0569A35F52716A51E259899BCAE3C17 /* FMDatabasePool.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FMDatabasePool.m; path = src/fmdb/FMDatabasePool.m; sourceTree = "<group>"; };
-		C48FA0FBFBE87BC1A5128C0CF07149D1 /* FMDatabase.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FMDatabase.m; path = src/fmdb/FMDatabase.m; sourceTree = "<group>"; };
-		C5E5A0B33D17131F6FF7DE9CE81E1F01 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C66602CACC39417528ED54FC2217C690 /* Pods-Harrier_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Harrier_Tests-umbrella.h"; sourceTree = "<group>"; };
-		C86753C9CE63EBBB18EB7EF38DF6EA06 /* Pods-Harrier_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Harrier_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		CABD29631C5395A50EF0972549F796E5 /* Pods_Harrier_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Harrier_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		CC7CE1AE6D53B1DCFDD240247D64A3DD /* FMDatabaseQueue.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FMDatabaseQueue.m; path = src/fmdb/FMDatabaseQueue.m; sourceTree = "<group>"; };
+		CEAFDDB16BE81BD1C6E151EA2BF011F4 /* HarrierQueueDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HarrierQueueDelegate.swift; sourceTree = "<group>"; };
 		CF007CA078631247A11AB24E9AEA40D3 /* HarrierQueue.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = HarrierQueue.xcconfig; sourceTree = "<group>"; };
-		DE8D1631CB3F7AC4C215A717D188201A /* HarrierQueue-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "HarrierQueue-Private.xcconfig"; sourceTree = "<group>"; };
-		E8749806207E66D7FEEA65F28D815513 /* FMDB.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMDB.h; path = src/fmdb/FMDB.h; sourceTree = "<group>"; };
+		D81874915E1F9A37E41B0BA019EF5092 /* Pods-Harrier_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Harrier_Tests-umbrella.h"; sourceTree = "<group>"; };
+		E9FDE8E5866E4809B7F572F08E3E3BC3 /* Pods_Harrier_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Harrier_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		0722059B38AAE52109164D15E08BA363 /* Frameworks */ = {
+		0575EC26FB4587E864BF903E48572F0F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D067B092483796771935B6CBC7EEDAB6 /* Foundation.framework in Frameworks */,
+				AA79CB7D9317FE11E032BD73446EF7BB /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		62D622EA2983CCFB98D8172B438B0523 /* Frameworks */ = {
+		E498EA13CDA4DE1CE6A8B748263D50C5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FDE09CEF23AEEFD79876DEA0C6A088E6 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B2344AF9B16A96D788C85BFEC5477B89 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				973A90180DE1E98ADFF2D1E8C593CE0C /* FMDB.framework in Frameworks */,
-				A4130A38BC187DFCD91FA83F965FD93E /* Foundation.framework in Frameworks */,
+				DF97D600530900B0A2FB295329D5F2EF /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,61 +85,27 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		0B27D6D18A6123CA944B29E5EE992340 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				2BED5A302C9D75ED65E29A2CC949C995 /* FMDB.modulemap */,
-				41E24A2AA5755B0191B4FFDF5813DF57 /* FMDB.xcconfig */,
-				37FB25C7BF1350921B4EB0BC6BAF7664 /* FMDB-Private.xcconfig */,
-				B0CE268F805AD8F09A1F77CA03CB06D8 /* FMDB-dummy.m */,
-				B311AD74520FF47E111B8C4CD0295097 /* FMDB-prefix.pch */,
-				6A70F3154100A0244A127DE71718E04E /* FMDB-umbrella.h */,
-				C5E5A0B33D17131F6FF7DE9CE81E1F01 /* Info.plist */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/FMDB";
-			sourceTree = "<group>";
-		};
-		142152A596A9A542DD1EBC8A062035FC /* FMDB */ = {
-			isa = PBXGroup;
-			children = (
-				0B27D6D18A6123CA944B29E5EE992340 /* Support Files */,
-				63D136CC93453BECCA64A319DFA585C8 /* common */,
-			);
-			path = FMDB;
-			sourceTree = "<group>";
-		};
 		405591AC3071AFAEDFE64540EC68E098 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
 				7E6ABD97D482885C8DFB90B7DBB1537E /* HarrierQueue.modulemap */,
 				CF007CA078631247A11AB24E9AEA40D3 /* HarrierQueue.xcconfig */,
-				DE8D1631CB3F7AC4C215A717D188201A /* HarrierQueue-Private.xcconfig */,
-				44F6E9597D9F784756D1C1F1A307213C /* HarrierQueue-dummy.m */,
+				82ACA3CC16738BC21C139210DD032CC6 /* HarrierQueue-Private.xcconfig */,
+				4D8873551782DB1B6524B16CF624A18B /* HarrierQueue-dummy.m */,
 				5D4BD32EB1231FAD0E2DF4C3A01C102F /* HarrierQueue-prefix.pch */,
-				2DC45A1C7AF04083057995B567C0A470 /* HarrierQueue-umbrella.h */,
+				162C8526DCA72EA672C3EE529589D2C8 /* HarrierQueue-umbrella.h */,
 				2CE8AF1C747698E43D26222B9DCED543 /* Info.plist */,
 			);
 			name = "Support Files";
 			path = "Example/Pods/Target Support Files/HarrierQueue";
 			sourceTree = "<group>";
 		};
-		63D136CC93453BECCA64A319DFA585C8 /* common */ = {
+		53F661C0CA7190D2CF05023FB33D61E4 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				E8749806207E66D7FEEA65F28D815513 /* FMDB.h */,
-				74EF260E942A1B8A206C495E3F6C50AA /* FMDatabase.h */,
-				C48FA0FBFBE87BC1A5128C0CF07149D1 /* FMDatabase.m */,
-				423C3496083DD7DF58906CD9534297B6 /* FMDatabaseAdditions.h */,
-				1916B0D1E4F1CBE590AF4304279C441F /* FMDatabaseAdditions.m */,
-				129531EB4AA1E7AB5E95829B52727901 /* FMDatabasePool.h */,
-				C0569A35F52716A51E259899BCAE3C17 /* FMDatabasePool.m */,
-				AF22211047FB74D3EB7EE60C7A6AE281 /* FMDatabaseQueue.h */,
-				CC7CE1AE6D53B1DCFDD240247D64A3DD /* FMDatabaseQueue.m */,
-				2EC097B8DDF0E778322BD3D175626447 /* FMResultSet.h */,
-				2FC60F60A1FA17316487871C29E4BED3 /* FMResultSet.m */,
+				2705C780A37E677F862E72EF1507C32F /* Foundation.framework */,
 			);
-			name = common;
+			name = iOS;
 			sourceTree = "<group>";
 		};
 		6682434E352138794F5D3DAD0242A0FD /* Development Pods */ = {
@@ -213,8 +121,7 @@
 			children = (
 				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
 				6682434E352138794F5D3DAD0242A0FD /* Development Pods */,
-				D2304513832E75413DFDFE967D300314 /* Frameworks */,
-				BFB8C92E749ED180124155E2270474D2 /* Pods */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
 				CCA510CFBEA2D207524CDA0D73C3B561 /* Products */,
 				04309AE781915982318BCA8C65EDE81D /* Targets Support Files */,
 			);
@@ -223,10 +130,10 @@
 		903F891E27AD571603EE19647FC43D56 /* HarrierQueue */ = {
 			isa = PBXGroup;
 			children = (
-				1B2E49147FF614AEF4420A1223BDD142 /* HarrierQueue.swift */,
-				B53579021E0E232F8DC69BB9C144D03E /* HarrierQueueDatabase.swift */,
-				B82197E6604F8B27A8740C3DDBC4280E /* HarrierQueueDelegate.swift */,
-				0F18AAD67411E93B9C3187CD309981B3 /* HarrierTask.swift */,
+				88D57E0D395EA2E78EFA10846222592F /* HarrierQueue.swift */,
+				B8D616B66F4770B95CD79BF5A62923C0 /* HarrierQueueDatabase.swift */,
+				CEAFDDB16BE81BD1C6E151EA2BF011F4 /* HarrierQueueDelegate.swift */,
+				1C1183000D3AF1D605EECBA6CA04E7E8 /* HarrierTask.swift */,
 			);
 			path = HarrierQueue;
 			sourceTree = "<group>";
@@ -241,39 +148,21 @@
 			path = "/Users/Graham/My Pods/HarrierQueue";
 			sourceTree = "<absolute>";
 		};
-		A5C97C447C6BEBDFAD0DA0957F082AF8 /* iOS */ = {
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				93654E313767CD2BD7D881CA24B4545A /* Foundation.framework */,
+				53F661C0CA7190D2CF05023FB33D61E4 /* iOS */,
 			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
-		BFB8C92E749ED180124155E2270474D2 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				142152A596A9A542DD1EBC8A062035FC /* FMDB */,
-			);
-			name = Pods;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		CCA510CFBEA2D207524CDA0D73C3B561 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4D51D1F2BC4E908A5B8CA50A972C9221 /* FMDB.framework */,
-				1C87E9AD05187C40A7F654F397C26666 /* HarrierQueue.framework */,
-				CABD29631C5395A50EF0972549F796E5 /* Pods_Harrier_Tests.framework */,
+				842CA6D0D99CFB246D4D6E0BDA59FFF8 /* HarrierQueue.framework */,
+				E9FDE8E5866E4809B7F572F08E3E3BC3 /* Pods_Harrier_Tests.framework */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		D2304513832E75413DFDFE967D300314 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				35A30B39BEA13671E0E9F18961DEFC7B /* FMDB.framework */,
-				A5C97C447C6BEBDFAD0DA0957F082AF8 /* iOS */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		FE87E8402BF7512DF3FE59BA9DA11F3B /* Pods-Harrier_Tests */ = {
@@ -283,12 +172,12 @@
 				BAE6CFBB7431CD343D495C7E1F453E28 /* Pods-Harrier_Tests.modulemap */,
 				528DF79052CA771FF257A0F11C824C7E /* Pods-Harrier_Tests-acknowledgements.markdown */,
 				83AA1CC48DFCC019DA3FC990EDEDA763 /* Pods-Harrier_Tests-acknowledgements.plist */,
-				0053119F499B7699619D4A7DA50C04B7 /* Pods-Harrier_Tests-dummy.m */,
+				B0441C7A2FFDFF12EF5F0FCB31183D1B /* Pods-Harrier_Tests-dummy.m */,
 				9DA0B4CD1FD39AB4AAEA8817C4022550 /* Pods-Harrier_Tests-frameworks.sh */,
 				8BECFD09C843A5FE722AF824D4AF893D /* Pods-Harrier_Tests-resources.sh */,
-				C66602CACC39417528ED54FC2217C690 /* Pods-Harrier_Tests-umbrella.h */,
-				C86753C9CE63EBBB18EB7EF38DF6EA06 /* Pods-Harrier_Tests.debug.xcconfig */,
-				6C17193D0ABF1B4914089676FFFE19AD /* Pods-Harrier_Tests.release.xcconfig */,
+				D81874915E1F9A37E41B0BA019EF5092 /* Pods-Harrier_Tests-umbrella.h */,
+				0FE9DCDA973919FF040053752618125E /* Pods-Harrier_Tests.debug.xcconfig */,
+				5C2DA36ED2EEAE0FBC14A6BCB951B945 /* Pods-Harrier_Tests.release.xcconfig */,
 			);
 			name = "Pods-Harrier_Tests";
 			path = "Target Support Files/Pods-Harrier_Tests";
@@ -297,91 +186,58 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		066CA75866D3678E5F74540DD883440C /* Headers */ = {
+		9D739BAE86DEBDD5528985C8828E967E /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				55BC58FFEFC7815C9176611B6DB0A61A /* Pods-Harrier_Tests-umbrella.h in Headers */,
+				727F8CCC88A1423C88DF9950F1FC4E28 /* Pods-Harrier_Tests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4EF285D692D25F0DD8B41A36BA65585D /* Headers */ = {
+		A5445305E35F992774038AB066F9C903 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				34CA290DA9BC7BE0DA4C1EBAB9C215E6 /* FMDB-umbrella.h in Headers */,
-				C005207F9D16BF9C7CE5408D39C23A28 /* FMDB.h in Headers */,
-				2DB3E6FF2E2D6B477FC760B19ABC70B3 /* FMDatabase.h in Headers */,
-				704C59C685C4B9CCA3893A57FE3DEE94 /* FMDatabaseAdditions.h in Headers */,
-				5228EF70C1C2D8BD7BEF391D95E99F01 /* FMDatabasePool.h in Headers */,
-				F5BC6F06F7A7F8D0A0F378F8CE8CBD62 /* FMDatabaseQueue.h in Headers */,
-				4053BD542D697CDA141917D8020C6364 /* FMResultSet.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E212DCBD383192D8371C4D85D6AF7671 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5025AA411F946B7EBDCE36437AEC4DC2 /* HarrierQueue-umbrella.h in Headers */,
+				C5D4DF61FB7DC60C2B25BB8A7D54B847 /* HarrierQueue-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		2836BB0395EF52780F55C0B5FD04739E /* HarrierQueue */ = {
+		5759EEE17CF7D7BE0ED8043956E5E8B8 /* Pods-Harrier_Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 49D028077167CBC1035F2C446D3DF24C /* Build configuration list for PBXNativeTarget "HarrierQueue" */;
+			buildConfigurationList = F5700C31405074EC5E142EAB82FF72B1 /* Build configuration list for PBXNativeTarget "Pods-Harrier_Tests" */;
 			buildPhases = (
-				523F856DFD96D40615568268F821E9D1 /* Sources */,
-				B2344AF9B16A96D788C85BFEC5477B89 /* Frameworks */,
-				E212DCBD383192D8371C4D85D6AF7671 /* Headers */,
+				694F9FB3A914141D11B1F14E80FC1BBC /* Sources */,
+				0575EC26FB4587E864BF903E48572F0F /* Frameworks */,
+				9D739BAE86DEBDD5528985C8828E967E /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				710B1972B128EAFA64FCEC4F4279E800 /* PBXTargetDependency */,
-			);
-			name = HarrierQueue;
-			productName = HarrierQueue;
-			productReference = 1C87E9AD05187C40A7F654F397C26666 /* HarrierQueue.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		E6034B34F139FF6CDD7B5BDEA4B4190A /* FMDB */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = DEE22AFC36618F1BC8C182A4BD827750 /* Build configuration list for PBXNativeTarget "FMDB" */;
-			buildPhases = (
-				0D0C02DAB2FEB729C1EF08EDE5E2A954 /* Sources */,
-				0722059B38AAE52109164D15E08BA363 /* Frameworks */,
-				4EF285D692D25F0DD8B41A36BA65585D /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = FMDB;
-			productName = FMDB;
-			productReference = 4D51D1F2BC4E908A5B8CA50A972C9221 /* FMDB.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		EEA32FFAFD682D851EBE35AA6339D088 /* Pods-Harrier_Tests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 36315EEA7469FF86EFEA452975F3D545 /* Build configuration list for PBXNativeTarget "Pods-Harrier_Tests" */;
-			buildPhases = (
-				DB8CF77D4F8228D9F617904EAA48298D /* Sources */,
-				62D622EA2983CCFB98D8172B438B0523 /* Frameworks */,
-				066CA75866D3678E5F74540DD883440C /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				D0CBA44B415F10FF85EB1B08EAC1EC82 /* PBXTargetDependency */,
-				C30F49E33B031459C84B13BFB13CC0FB /* PBXTargetDependency */,
+				04DDCBFEB7E733D04D27F7EE0DC23C36 /* PBXTargetDependency */,
 			);
 			name = "Pods-Harrier_Tests";
 			productName = "Pods-Harrier_Tests";
-			productReference = CABD29631C5395A50EF0972549F796E5 /* Pods_Harrier_Tests.framework */;
+			productReference = E9FDE8E5866E4809B7F572F08E3E3BC3 /* Pods_Harrier_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B632481411CCE8F73448C74F74032E1E /* HarrierQueue */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7D0D6CECC1941E2980A62CF514E8159E /* Build configuration list for PBXNativeTarget "HarrierQueue" */;
+			buildPhases = (
+				F9076D46CC33DC158F0DF5B911DE2DC1 /* Sources */,
+				E498EA13CDA4DE1CE6A8B748263D50C5 /* Frameworks */,
+				A5445305E35F992774038AB066F9C903 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HarrierQueue;
+			productName = HarrierQueue;
+			productReference = 842CA6D0D99CFB246D4D6E0BDA59FFF8 /* HarrierQueue.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -405,98 +261,45 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				E6034B34F139FF6CDD7B5BDEA4B4190A /* FMDB */,
-				2836BB0395EF52780F55C0B5FD04739E /* HarrierQueue */,
-				EEA32FFAFD682D851EBE35AA6339D088 /* Pods-Harrier_Tests */,
+				B632481411CCE8F73448C74F74032E1E /* HarrierQueue */,
+				5759EEE17CF7D7BE0ED8043956E5E8B8 /* Pods-Harrier_Tests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		0D0C02DAB2FEB729C1EF08EDE5E2A954 /* Sources */ = {
+		694F9FB3A914141D11B1F14E80FC1BBC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4C7F6016530EC50251AF52336EA28AA9 /* FMDB-dummy.m in Sources */,
-				C8D434CDBD59A5B5E8D28187288CFDF8 /* FMDatabase.m in Sources */,
-				D23B41D805F632D40313275097022D9E /* FMDatabaseAdditions.m in Sources */,
-				05C19EF5157DFE880C3FED8B14C1C936 /* FMDatabasePool.m in Sources */,
-				50A36EC58639C6D53450DACD9BE1B5C5 /* FMDatabaseQueue.m in Sources */,
-				423F4462819CD14F223656457912ED0D /* FMResultSet.m in Sources */,
+				09994601FB57DEC07C2572781AF130D9 /* Pods-Harrier_Tests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		523F856DFD96D40615568268F821E9D1 /* Sources */ = {
+		F9076D46CC33DC158F0DF5B911DE2DC1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5F52448AE65AE74AEA781B6E16EBB381 /* HarrierQueue-dummy.m in Sources */,
-				B35C305FD22DC26B6A99F187231D9C3D /* HarrierQueue.swift in Sources */,
-				29DDAE179909002914A43E4AFF71E0A1 /* HarrierQueueDatabase.swift in Sources */,
-				CF73C37103F8F9BF7F91C36EBBA881AD /* HarrierQueueDelegate.swift in Sources */,
-				6DC8CF9AD82AD5A31792E58308FF4EA2 /* HarrierTask.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DB8CF77D4F8228D9F617904EAA48298D /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3B189E5ABC0C7E2B0030372DCF2D085F /* Pods-Harrier_Tests-dummy.m in Sources */,
+				063758A9540F81AF58D97F59540DA447 /* HarrierQueue-dummy.m in Sources */,
+				873C9DB383E65A554637FC29FEE8D25B /* HarrierQueue.swift in Sources */,
+				4441F57CAAF7F375C80937500822E141 /* HarrierQueueDatabase.swift in Sources */,
+				6D4E53C997BA3C4E7E46F956D99FEF90 /* HarrierQueueDelegate.swift in Sources */,
+				B14AFA6ED59FBF4B25AD8FAF0ED32AB3 /* HarrierTask.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		710B1972B128EAFA64FCEC4F4279E800 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = FMDB;
-			target = E6034B34F139FF6CDD7B5BDEA4B4190A /* FMDB */;
-			targetProxy = 79B60D7E22214DCCFDA0873D89156CA5 /* PBXContainerItemProxy */;
-		};
-		C30F49E33B031459C84B13BFB13CC0FB /* PBXTargetDependency */ = {
+		04DDCBFEB7E733D04D27F7EE0DC23C36 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = HarrierQueue;
-			target = 2836BB0395EF52780F55C0B5FD04739E /* HarrierQueue */;
-			targetProxy = 619A64AD5763FFEF2A427392D7B7858C /* PBXContainerItemProxy */;
-		};
-		D0CBA44B415F10FF85EB1B08EAC1EC82 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = FMDB;
-			target = E6034B34F139FF6CDD7B5BDEA4B4190A /* FMDB */;
-			targetProxy = 9927572FD8131B0F32C85FD1319AC9B3 /* PBXContainerItemProxy */;
+			target = B632481411CCE8F73448C74F74032E1E /* HarrierQueue */;
+			targetProxy = 3C701722C1ACAB597F3F3D77AEC725A6 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		0A8E07D2B0403E6109012D6CBE52A657 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = DE8D1631CB3F7AC4C215A717D188201A /* HarrierQueue-Private.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1.0.0;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/HarrierQueue/HarrierQueue-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/HarrierQueue/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/HarrierQueue/HarrierQueue.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = HarrierQueue;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 		10DE1947DAC0ED28F6C0A9F9BD75D546 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -528,6 +331,33 @@
 				STRIP_INSTALLED_PRODUCT = NO;
 				SYMROOT = "${SRCROOT}/../build";
 				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		19D51CFAC9F42B539B24DF656DB62761 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 82ACA3CC16738BC21C139210DD032CC6 /* HarrierQueue-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1.0.0;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/HarrierQueue/HarrierQueue-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/HarrierQueue/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/HarrierQueue/HarrierQueue.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = HarrierQueue;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
@@ -570,36 +400,38 @@
 			};
 			name = Debug;
 		};
-		72E25E3051398EE76F7EB5D3114CBF4F /* Debug */ = {
+		A23B01C88A535EB7CCE012353ABA87EA /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 37FB25C7BF1350921B4EB0BC6BAF7664 /* FMDB-Private.xcconfig */;
+			baseConfigurationReference = 5C2DA36ED2EEAE0FBC14A6BCB951B945 /* Pods-Harrier_Tests.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 2.5.0;
+				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 2;
-				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/FMDB/FMDB-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/FMDB/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-Harrier_Tests/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/FMDB/FMDB.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = FMDB;
+				MODULEMAP_FILE = "Target Support Files/Pods-Harrier_Tests/Pods-Harrier_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_Harrier_Tests;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
-		93984CDF94AD0EDA6BB69ABAB1B41827 /* Debug */ = {
+		A4D19AF17163E0A6B6C8618D18CB2C5D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C86753C9CE63EBBB18EB7EF38DF6EA06 /* Pods-Harrier_Tests.debug.xcconfig */;
+			baseConfigurationReference = 0FE9DCDA973919FF040053752618125E /* Pods-Harrier_Tests.debug.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -627,65 +459,9 @@
 			};
 			name = Debug;
 		};
-		A616D7110B3F5CCABEF76FE8C7FB794B /* Release */ = {
+		A6A4F4DFF435BD81AFC601DEBB94A6BF /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6C17193D0ABF1B4914089676FFFE19AD /* Pods-Harrier_Tests.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-Harrier_Tests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-Harrier_Tests/Pods-Harrier_Tests.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods_Harrier_Tests;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		DBA38705923F24479EC6456B5EF9558B /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 37FB25C7BF1350921B4EB0BC6BAF7664 /* FMDB-Private.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 2.5.0;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 2;
-				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/FMDB/FMDB-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/FMDB/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/FMDB/FMDB.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = FMDB;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		EE8DF54EF7303EAF98F1C65C0C9D59DC /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = DE8D1631CB3F7AC4C215A717D188201A /* HarrierQueue-Private.xcconfig */;
+			baseConfigurationReference = 82ACA3CC16738BC21C139210DD032CC6 /* HarrierQueue-Private.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1.0.0;
@@ -723,29 +499,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		36315EEA7469FF86EFEA452975F3D545 /* Build configuration list for PBXNativeTarget "Pods-Harrier_Tests" */ = {
+		7D0D6CECC1941E2980A62CF514E8159E /* Build configuration list for PBXNativeTarget "HarrierQueue" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				93984CDF94AD0EDA6BB69ABAB1B41827 /* Debug */,
-				A616D7110B3F5CCABEF76FE8C7FB794B /* Release */,
+				A6A4F4DFF435BD81AFC601DEBB94A6BF /* Debug */,
+				19D51CFAC9F42B539B24DF656DB62761 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		49D028077167CBC1035F2C446D3DF24C /* Build configuration list for PBXNativeTarget "HarrierQueue" */ = {
+		F5700C31405074EC5E142EAB82FF72B1 /* Build configuration list for PBXNativeTarget "Pods-Harrier_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				EE8DF54EF7303EAF98F1C65C0C9D59DC /* Debug */,
-				0A8E07D2B0403E6109012D6CBE52A657 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		DEE22AFC36618F1BC8C182A4BD827750 /* Build configuration list for PBXNativeTarget "FMDB" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				72E25E3051398EE76F7EB5D3114CBF4F /* Debug */,
-				DBA38705923F24479EC6456B5EF9558B /* Release */,
+				A4D19AF17163E0A6B6C8618D18CB2C5D /* Debug */,
+				A23B01C88A535EB7CCE012353ABA87EA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
