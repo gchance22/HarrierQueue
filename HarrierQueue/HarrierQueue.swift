@@ -70,7 +70,7 @@ public class HarrierQueue: NSObject, HarrierTaskDelegate {
     
     private func sortQueue() {
         // remember the array is ordered low priority first
-        queuedTasks.sort { !$0.isHigherPriority(thanTask: $1) }
+        queuedTasks.sortInPlace { !$0.isHigherPriority(thanTask: $1) }
     }
     
     private func addTaskToDatabase(task: HarrierTask) {
@@ -132,10 +132,10 @@ public class HarrierQueue: NSObject, HarrierTaskDelegate {
     :param: task Task to enqueue.
     */
     public func enqueueUniqueTask(task: HarrierTask) {
-        if !contains(tasks, task) {
+        if !tasks.contains(task) {
             enqueueTask(task)
         } else {
-            println("Not enqueuing task because it is already in the queue. Task ID: \(task.uniqueIdentifier)")
+            print("Not enqueuing task because it is already in the queue. Task ID: \(task.uniqueIdentifier)")
         }
     }
     
@@ -146,10 +146,10 @@ public class HarrierQueue: NSObject, HarrierTaskDelegate {
                 return taskToRemove
             }
         }
-        if contains(_activeTasks, taskToRemove) {
-            println("Task is already running. It cannot be removed.")
+        if activeTasks.contains(taskToRemove) {
+            print("Task is already running. It cannot be removed.")
         } else {
-            println("Task to remove is not in the queue.")
+            print("Task to remove is not in the queue.")
         }
         return nil
     }

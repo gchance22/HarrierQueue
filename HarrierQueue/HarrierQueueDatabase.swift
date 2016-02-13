@@ -11,7 +11,7 @@ import Foundation
 internal class HarrierQueueDatabase {
     
     
-    public init(filepath: String) {
+    internal init(filepath: String) {
         
     }
 }
