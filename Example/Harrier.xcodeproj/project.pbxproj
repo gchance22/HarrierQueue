@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		BF434ABA1B93C48A0037CBE6 /* HarrierQueue.podspec in Resources */ = {isa = PBXBuildFile; fileRef = BF434AB91B93C48A0037CBE6 /* HarrierQueue.podspec */; };
-		CAE86C3ED94DD02501F458F0 /* Pods_Harrier_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7286C47D25E056E7F3BB65A0 /* Pods_Harrier_Tests.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		CAE86C3ED94DD02501F458F0 /* Pods_Harrier_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7286C47D25E056E7F3BB65A0 /* Pods_Harrier_Tests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -128,6 +128,7 @@
 		607FACC81AFB9204008FA782 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0720;
 				LastUpgradeCheck = 0630;
 				ORGANIZATIONNAME = CocoaPods;
 				TargetAttributes = {

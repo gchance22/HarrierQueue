@@ -7,70 +7,69 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		063758A9540F81AF58D97F59540DA447 /* HarrierQueue-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D8873551782DB1B6524B16CF624A18B /* HarrierQueue-dummy.m */; };
-		09994601FB57DEC07C2572781AF130D9 /* Pods-Harrier_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B0441C7A2FFDFF12EF5F0FCB31183D1B /* Pods-Harrier_Tests-dummy.m */; };
-		4441F57CAAF7F375C80937500822E141 /* HarrierQueueDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8D616B66F4770B95CD79BF5A62923C0 /* HarrierQueueDatabase.swift */; };
-		6D4E53C997BA3C4E7E46F956D99FEF90 /* HarrierQueueDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAFDDB16BE81BD1C6E151EA2BF011F4 /* HarrierQueueDelegate.swift */; };
-		727F8CCC88A1423C88DF9950F1FC4E28 /* Pods-Harrier_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D81874915E1F9A37E41B0BA019EF5092 /* Pods-Harrier_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		873C9DB383E65A554637FC29FEE8D25B /* HarrierQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D57E0D395EA2E78EFA10846222592F /* HarrierQueue.swift */; };
-		AA79CB7D9317FE11E032BD73446EF7BB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2705C780A37E677F862E72EF1507C32F /* Foundation.framework */; };
-		B14AFA6ED59FBF4B25AD8FAF0ED32AB3 /* HarrierTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1183000D3AF1D605EECBA6CA04E7E8 /* HarrierTask.swift */; };
-		C5D4DF61FB7DC60C2B25BB8A7D54B847 /* HarrierQueue-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 162C8526DCA72EA672C3EE529589D2C8 /* HarrierQueue-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DF97D600530900B0A2FB295329D5F2EF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2705C780A37E677F862E72EF1507C32F /* Foundation.framework */; };
+		0492647BC992A1579B78C21813839F74 /* HarrierQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81A69ED825B12E9FB4389C3D3AB7B471 /* HarrierQueue.swift */; };
+		08E205672BB32F723826B8B1664D4CE4 /* HarrierQueueDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4614516B24E382AF04E914DA153D5C2 /* HarrierQueueDelegate.swift */; };
+		22C0ABFF8C8D6E0B7E5C2E24AFE0D9AE /* HarrierQueue-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CAD8EA59A2105D1CFE4A4D11793E56C4 /* HarrierQueue-dummy.m */; };
+		4D6394BFF53528D4D180F300A15CF9B6 /* HarrierQueue-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A89D99F4FCEA3CA5411E7B2FD63D504 /* HarrierQueue-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A6922D4186F07C9FB794A6C7261DCE14 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
+		B2FEAAB21175D78FBBAB588B7B4C39EE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
+		C418DB6DFBF38384A50178735AA41FE4 /* Pods-Harrier_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6152AE3C61C6D2ADCCE8848D1A4F96C7 /* Pods-Harrier_Tests-dummy.m */; };
+		CB6CCBCC03165C3EED363A694545D7A5 /* HarrierQueueDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15FFCE34621BF706A9CF96AA490FC8B5 /* HarrierQueueDatabase.swift */; };
+		D18DE521FF55C6C247867702E3B46DA6 /* HarrierTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7724A2C8EED59DA1211B6EC1CEC290 /* HarrierTask.swift */; };
+		E93AFA768305BC62B46C43DBB0EDB589 /* Pods-Harrier_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 54C0C55E7BFD5C8AFF42FF18FAB1D0F3 /* Pods-Harrier_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		3C701722C1ACAB597F3F3D77AEC725A6 /* PBXContainerItemProxy */ = {
+		7555895F911A2DFA6FDBCBC6FFAD4B19 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = B632481411CCE8F73448C74F74032E1E;
+			remoteGlobalIDString = 869B0F6FB5CCB97CC7A93BEFE63C6747;
 			remoteInfo = HarrierQueue;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0FE9DCDA973919FF040053752618125E /* Pods-Harrier_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Harrier_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		162C8526DCA72EA672C3EE529589D2C8 /* HarrierQueue-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HarrierQueue-umbrella.h"; sourceTree = "<group>"; };
-		1C1183000D3AF1D605EECBA6CA04E7E8 /* HarrierTask.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HarrierTask.swift; sourceTree = "<group>"; };
-		2705C780A37E677F862E72EF1507C32F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		2CE8AF1C747698E43D26222B9DCED543 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4D8873551782DB1B6524B16CF624A18B /* HarrierQueue-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "HarrierQueue-dummy.m"; sourceTree = "<group>"; };
+		0A5EEBA351BC074648D3FE6AAAF71272 /* Pods-Harrier_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Harrier_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		15FFCE34621BF706A9CF96AA490FC8B5 /* HarrierQueueDatabase.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HarrierQueueDatabase.swift; sourceTree = "<group>"; };
+		1CA7F6B62E0548CE7DC5699128851E3D /* Pods_Harrier_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Harrier_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		528DF79052CA771FF257A0F11C824C7E /* Pods-Harrier_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Harrier_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		5C2DA36ED2EEAE0FBC14A6BCB951B945 /* Pods-Harrier_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Harrier_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		5D4BD32EB1231FAD0E2DF4C3A01C102F /* HarrierQueue-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HarrierQueue-prefix.pch"; sourceTree = "<group>"; };
-		7E6ABD97D482885C8DFB90B7DBB1537E /* HarrierQueue.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = HarrierQueue.modulemap; sourceTree = "<group>"; };
-		82ACA3CC16738BC21C139210DD032CC6 /* HarrierQueue-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "HarrierQueue-Private.xcconfig"; sourceTree = "<group>"; };
+		54C0C55E7BFD5C8AFF42FF18FAB1D0F3 /* Pods-Harrier_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Harrier_Tests-umbrella.h"; sourceTree = "<group>"; };
+		6152AE3C61C6D2ADCCE8848D1A4F96C7 /* Pods-Harrier_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Harrier_Tests-dummy.m"; sourceTree = "<group>"; };
+		81A69ED825B12E9FB4389C3D3AB7B471 /* HarrierQueue.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HarrierQueue.swift; sourceTree = "<group>"; };
 		83AA1CC48DFCC019DA3FC990EDEDA763 /* Pods-Harrier_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Harrier_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		842CA6D0D99CFB246D4D6E0BDA59FFF8 /* HarrierQueue.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HarrierQueue.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		88D57E0D395EA2E78EFA10846222592F /* HarrierQueue.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HarrierQueue.swift; sourceTree = "<group>"; };
 		8BECFD09C843A5FE722AF824D4AF893D /* Pods-Harrier_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Harrier_Tests-resources.sh"; sourceTree = "<group>"; };
+		9A89D99F4FCEA3CA5411E7B2FD63D504 /* HarrierQueue-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HarrierQueue-umbrella.h"; sourceTree = "<group>"; };
 		9DA0B4CD1FD39AB4AAEA8817C4022550 /* Pods-Harrier_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Harrier_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		A3D1741A7E14E0810C65FC37AE4180D9 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B0441C7A2FFDFF12EF5F0FCB31183D1B /* Pods-Harrier_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Harrier_Tests-dummy.m"; sourceTree = "<group>"; };
-		B8D616B66F4770B95CD79BF5A62923C0 /* HarrierQueueDatabase.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HarrierQueueDatabase.swift; sourceTree = "<group>"; };
+		A4614516B24E382AF04E914DA153D5C2 /* HarrierQueueDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HarrierQueueDelegate.swift; sourceTree = "<group>"; };
+		A60906E41FC50D1F8EFCFF48934D9EE2 /* Pods-Harrier_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Harrier_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		BAE6CFBB7431CD343D495C7E1F453E28 /* Pods-Harrier_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Harrier_Tests.modulemap"; sourceTree = "<group>"; };
-		CEAFDDB16BE81BD1C6E151EA2BF011F4 /* HarrierQueueDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HarrierQueueDelegate.swift; sourceTree = "<group>"; };
-		CF007CA078631247A11AB24E9AEA40D3 /* HarrierQueue.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = HarrierQueue.xcconfig; sourceTree = "<group>"; };
-		D81874915E1F9A37E41B0BA019EF5092 /* Pods-Harrier_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Harrier_Tests-umbrella.h"; sourceTree = "<group>"; };
-		E9FDE8E5866E4809B7F572F08E3E3BC3 /* Pods_Harrier_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Harrier_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC7724A2C8EED59DA1211B6EC1CEC290 /* HarrierTask.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HarrierTask.swift; sourceTree = "<group>"; };
+		C91EF412241EA3C7623764A1A47C8249 /* HarrierQueue.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HarrierQueue.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CAD8EA59A2105D1CFE4A4D11793E56C4 /* HarrierQueue-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "HarrierQueue-dummy.m"; sourceTree = "<group>"; };
+		DB0B8EFB8BC81A50A1E8E8C9260D122E /* HarrierQueue.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = HarrierQueue.modulemap; sourceTree = "<group>"; };
+		E03D0F51BCC5CFBDD824FFFBDBEB1043 /* HarrierQueue-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HarrierQueue-prefix.pch"; sourceTree = "<group>"; };
+		E59EC271A506BA66DAA4E926E97EB45D /* HarrierQueue.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = HarrierQueue.xcconfig; sourceTree = "<group>"; };
+		F9E2D64BC62EE288EA2D03634F571850 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		0575EC26FB4587E864BF903E48572F0F /* Frameworks */ = {
+		59FC7EB49C9552882A9BAA68E762989F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AA79CB7D9317FE11E032BD73446EF7BB /* Foundation.framework in Frameworks */,
+				B2FEAAB21175D78FBBAB588B7B4C39EE /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E498EA13CDA4DE1CE6A8B748263D50C5 /* Frameworks */ = {
+		6E963630AF9CF376E53B1D79C5A7CB9F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DF97D600530900B0A2FB295329D5F2EF /* Foundation.framework in Frameworks */,
+				A6922D4186F07C9FB794A6C7261DCE14 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,84 +84,83 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		405591AC3071AFAEDFE64540EC68E098 /* Support Files */ = {
+		38121D5886F88A891DD56E321B1E4E34 /* HarrierQueue */ = {
 			isa = PBXGroup;
 			children = (
-				7E6ABD97D482885C8DFB90B7DBB1537E /* HarrierQueue.modulemap */,
-				CF007CA078631247A11AB24E9AEA40D3 /* HarrierQueue.xcconfig */,
-				82ACA3CC16738BC21C139210DD032CC6 /* HarrierQueue-Private.xcconfig */,
-				4D8873551782DB1B6524B16CF624A18B /* HarrierQueue-dummy.m */,
-				5D4BD32EB1231FAD0E2DF4C3A01C102F /* HarrierQueue-prefix.pch */,
-				162C8526DCA72EA672C3EE529589D2C8 /* HarrierQueue-umbrella.h */,
-				2CE8AF1C747698E43D26222B9DCED543 /* Info.plist */,
+				81A69ED825B12E9FB4389C3D3AB7B471 /* HarrierQueue.swift */,
+				15FFCE34621BF706A9CF96AA490FC8B5 /* HarrierQueueDatabase.swift */,
+				A4614516B24E382AF04E914DA153D5C2 /* HarrierQueueDelegate.swift */,
+				BC7724A2C8EED59DA1211B6EC1CEC290 /* HarrierTask.swift */,
 			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/HarrierQueue";
+			path = HarrierQueue;
 			sourceTree = "<group>";
 		};
-		53F661C0CA7190D2CF05023FB33D61E4 /* iOS */ = {
+		73DC2DCF1485C9B2D699DD29EFED83E6 /* HarrierQueue */ = {
 			isa = PBXGroup;
 			children = (
-				2705C780A37E677F862E72EF1507C32F /* Foundation.framework */,
+				38121D5886F88A891DD56E321B1E4E34 /* HarrierQueue */,
+				F0D9305681F54572FE2A03BED298B303 /* Support Files */,
 			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
-		6682434E352138794F5D3DAD0242A0FD /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				9794986BB235AFC4F70D13C611114707 /* HarrierQueue */,
-			);
-			name = "Development Pods";
-			sourceTree = "<group>";
+			name = HarrierQueue;
+			path = "/Users/Graham/Projects/My Projects/HarrierQueue";
+			sourceTree = "<absolute>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
-				6682434E352138794F5D3DAD0242A0FD /* Development Pods */,
+				F3A81C6E4077D04310FEADC00F2BF3D7 /* Development Pods */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				CCA510CFBEA2D207524CDA0D73C3B561 /* Products */,
+				96E4001771CE0B2194238AB434B06B93 /* Products */,
 				04309AE781915982318BCA8C65EDE81D /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		903F891E27AD571603EE19647FC43D56 /* HarrierQueue */ = {
+		96E4001771CE0B2194238AB434B06B93 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				88D57E0D395EA2E78EFA10846222592F /* HarrierQueue.swift */,
-				B8D616B66F4770B95CD79BF5A62923C0 /* HarrierQueueDatabase.swift */,
-				CEAFDDB16BE81BD1C6E151EA2BF011F4 /* HarrierQueueDelegate.swift */,
-				1C1183000D3AF1D605EECBA6CA04E7E8 /* HarrierTask.swift */,
+				C91EF412241EA3C7623764A1A47C8249 /* HarrierQueue.framework */,
+				1CA7F6B62E0548CE7DC5699128851E3D /* Pods_Harrier_Tests.framework */,
 			);
-			path = HarrierQueue;
+			name = Products;
 			sourceTree = "<group>";
-		};
-		9794986BB235AFC4F70D13C611114707 /* HarrierQueue */ = {
-			isa = PBXGroup;
-			children = (
-				903F891E27AD571603EE19647FC43D56 /* HarrierQueue */,
-				405591AC3071AFAEDFE64540EC68E098 /* Support Files */,
-			);
-			name = HarrierQueue;
-			path = "/Users/Graham/My Pods/HarrierQueue";
-			sourceTree = "<absolute>";
 		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				53F661C0CA7190D2CF05023FB33D61E4 /* iOS */,
+				BF6342C8B29F4CEEA088EFF7AB4DE362 /* iOS */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		CCA510CFBEA2D207524CDA0D73C3B561 /* Products */ = {
+		BF6342C8B29F4CEEA088EFF7AB4DE362 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				842CA6D0D99CFB246D4D6E0BDA59FFF8 /* HarrierQueue.framework */,
-				E9FDE8E5866E4809B7F572F08E3E3BC3 /* Pods_Harrier_Tests.framework */,
+				3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */,
 			);
-			name = Products;
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		F0D9305681F54572FE2A03BED298B303 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				DB0B8EFB8BC81A50A1E8E8C9260D122E /* HarrierQueue.modulemap */,
+				E59EC271A506BA66DAA4E926E97EB45D /* HarrierQueue.xcconfig */,
+				CAD8EA59A2105D1CFE4A4D11793E56C4 /* HarrierQueue-dummy.m */,
+				E03D0F51BCC5CFBDD824FFFBDBEB1043 /* HarrierQueue-prefix.pch */,
+				9A89D99F4FCEA3CA5411E7B2FD63D504 /* HarrierQueue-umbrella.h */,
+				F9E2D64BC62EE288EA2D03634F571850 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/HarrierQueue";
+			sourceTree = "<group>";
+		};
+		F3A81C6E4077D04310FEADC00F2BF3D7 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				73DC2DCF1485C9B2D699DD29EFED83E6 /* HarrierQueue */,
+			);
+			name = "Development Pods";
 			sourceTree = "<group>";
 		};
 		FE87E8402BF7512DF3FE59BA9DA11F3B /* Pods-Harrier_Tests */ = {
@@ -172,12 +170,12 @@
 				BAE6CFBB7431CD343D495C7E1F453E28 /* Pods-Harrier_Tests.modulemap */,
 				528DF79052CA771FF257A0F11C824C7E /* Pods-Harrier_Tests-acknowledgements.markdown */,
 				83AA1CC48DFCC019DA3FC990EDEDA763 /* Pods-Harrier_Tests-acknowledgements.plist */,
-				B0441C7A2FFDFF12EF5F0FCB31183D1B /* Pods-Harrier_Tests-dummy.m */,
+				6152AE3C61C6D2ADCCE8848D1A4F96C7 /* Pods-Harrier_Tests-dummy.m */,
 				9DA0B4CD1FD39AB4AAEA8817C4022550 /* Pods-Harrier_Tests-frameworks.sh */,
 				8BECFD09C843A5FE722AF824D4AF893D /* Pods-Harrier_Tests-resources.sh */,
-				D81874915E1F9A37E41B0BA019EF5092 /* Pods-Harrier_Tests-umbrella.h */,
-				0FE9DCDA973919FF040053752618125E /* Pods-Harrier_Tests.debug.xcconfig */,
-				5C2DA36ED2EEAE0FBC14A6BCB951B945 /* Pods-Harrier_Tests.release.xcconfig */,
+				54C0C55E7BFD5C8AFF42FF18FAB1D0F3 /* Pods-Harrier_Tests-umbrella.h */,
+				A60906E41FC50D1F8EFCFF48934D9EE2 /* Pods-Harrier_Tests.debug.xcconfig */,
+				0A5EEBA351BC074648D3FE6AAAF71272 /* Pods-Harrier_Tests.release.xcconfig */,
 			);
 			name = "Pods-Harrier_Tests";
 			path = "Target Support Files/Pods-Harrier_Tests";
@@ -186,50 +184,32 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		9D739BAE86DEBDD5528985C8828E967E /* Headers */ = {
+		94F2E1B8AADF96DA2A22413CE1947049 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				727F8CCC88A1423C88DF9950F1FC4E28 /* Pods-Harrier_Tests-umbrella.h in Headers */,
+				4D6394BFF53528D4D180F300A15CF9B6 /* HarrierQueue-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A5445305E35F992774038AB066F9C903 /* Headers */ = {
+		B19F1F116D41468EE4DE63E57A7A6B56 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C5D4DF61FB7DC60C2B25BB8A7D54B847 /* HarrierQueue-umbrella.h in Headers */,
+				E93AFA768305BC62B46C43DBB0EDB589 /* Pods-Harrier_Tests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		5759EEE17CF7D7BE0ED8043956E5E8B8 /* Pods-Harrier_Tests */ = {
+		869B0F6FB5CCB97CC7A93BEFE63C6747 /* HarrierQueue */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F5700C31405074EC5E142EAB82FF72B1 /* Build configuration list for PBXNativeTarget "Pods-Harrier_Tests" */;
+			buildConfigurationList = 3D20B5062D8D7E8E5BB759D4F687C7FB /* Build configuration list for PBXNativeTarget "HarrierQueue" */;
 			buildPhases = (
-				694F9FB3A914141D11B1F14E80FC1BBC /* Sources */,
-				0575EC26FB4587E864BF903E48572F0F /* Frameworks */,
-				9D739BAE86DEBDD5528985C8828E967E /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				04DDCBFEB7E733D04D27F7EE0DC23C36 /* PBXTargetDependency */,
-			);
-			name = "Pods-Harrier_Tests";
-			productName = "Pods-Harrier_Tests";
-			productReference = E9FDE8E5866E4809B7F572F08E3E3BC3 /* Pods_Harrier_Tests.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		B632481411CCE8F73448C74F74032E1E /* HarrierQueue */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 7D0D6CECC1941E2980A62CF514E8159E /* Build configuration list for PBXNativeTarget "HarrierQueue" */;
-			buildPhases = (
-				F9076D46CC33DC158F0DF5B911DE2DC1 /* Sources */,
-				E498EA13CDA4DE1CE6A8B748263D50C5 /* Frameworks */,
-				A5445305E35F992774038AB066F9C903 /* Headers */,
+				5624B38A6E4F569E1C2F6759B06AF532 /* Sources */,
+				59FC7EB49C9552882A9BAA68E762989F /* Frameworks */,
+				94F2E1B8AADF96DA2A22413CE1947049 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -237,7 +217,25 @@
 			);
 			name = HarrierQueue;
 			productName = HarrierQueue;
-			productReference = 842CA6D0D99CFB246D4D6E0BDA59FFF8 /* HarrierQueue.framework */;
+			productReference = C91EF412241EA3C7623764A1A47C8249 /* HarrierQueue.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D8C3519C503AACBEFFF2257951302990 /* Pods-Harrier_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3EB288D843976C5A1D4A31049189B1E4 /* Build configuration list for PBXNativeTarget "Pods-Harrier_Tests" */;
+			buildPhases = (
+				69A54CFD02B614616DAA6A2A7A3DBC22 /* Sources */,
+				6E963630AF9CF376E53B1D79C5A7CB9F /* Frameworks */,
+				B19F1F116D41468EE4DE63E57A7A6B56 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BDCEEC3EF3F77D298D6ABED594D60B8E /* PBXTargetDependency */,
+			);
+			name = "Pods-Harrier_Tests";
+			productName = "Pods-Harrier_Tests";
+			productReference = 1CA7F6B62E0548CE7DC5699128851E3D /* Pods_Harrier_Tests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -257,45 +255,45 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = CCA510CFBEA2D207524CDA0D73C3B561 /* Products */;
+			productRefGroup = 96E4001771CE0B2194238AB434B06B93 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B632481411CCE8F73448C74F74032E1E /* HarrierQueue */,
-				5759EEE17CF7D7BE0ED8043956E5E8B8 /* Pods-Harrier_Tests */,
+				869B0F6FB5CCB97CC7A93BEFE63C6747 /* HarrierQueue */,
+				D8C3519C503AACBEFFF2257951302990 /* Pods-Harrier_Tests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		694F9FB3A914141D11B1F14E80FC1BBC /* Sources */ = {
+		5624B38A6E4F569E1C2F6759B06AF532 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				09994601FB57DEC07C2572781AF130D9 /* Pods-Harrier_Tests-dummy.m in Sources */,
+				22C0ABFF8C8D6E0B7E5C2E24AFE0D9AE /* HarrierQueue-dummy.m in Sources */,
+				0492647BC992A1579B78C21813839F74 /* HarrierQueue.swift in Sources */,
+				CB6CCBCC03165C3EED363A694545D7A5 /* HarrierQueueDatabase.swift in Sources */,
+				08E205672BB32F723826B8B1664D4CE4 /* HarrierQueueDelegate.swift in Sources */,
+				D18DE521FF55C6C247867702E3B46DA6 /* HarrierTask.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F9076D46CC33DC158F0DF5B911DE2DC1 /* Sources */ = {
+		69A54CFD02B614616DAA6A2A7A3DBC22 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				063758A9540F81AF58D97F59540DA447 /* HarrierQueue-dummy.m in Sources */,
-				873C9DB383E65A554637FC29FEE8D25B /* HarrierQueue.swift in Sources */,
-				4441F57CAAF7F375C80937500822E141 /* HarrierQueueDatabase.swift in Sources */,
-				6D4E53C997BA3C4E7E46F956D99FEF90 /* HarrierQueueDelegate.swift in Sources */,
-				B14AFA6ED59FBF4B25AD8FAF0ED32AB3 /* HarrierTask.swift in Sources */,
+				C418DB6DFBF38384A50178735AA41FE4 /* Pods-Harrier_Tests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		04DDCBFEB7E733D04D27F7EE0DC23C36 /* PBXTargetDependency */ = {
+		BDCEEC3EF3F77D298D6ABED594D60B8E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = HarrierQueue;
-			target = B632481411CCE8F73448C74F74032E1E /* HarrierQueue */;
-			targetProxy = 3C701722C1ACAB597F3F3D77AEC725A6 /* PBXContainerItemProxy */;
+			target = 869B0F6FB5CCB97CC7A93BEFE63C6747 /* HarrierQueue */;
+			targetProxy = 7555895F911A2DFA6FDBCBC6FFAD4B19 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -331,33 +329,6 @@
 				STRIP_INSTALLED_PRODUCT = NO;
 				SYMROOT = "${SRCROOT}/../build";
 				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		19D51CFAC9F42B539B24DF656DB62761 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 82ACA3CC16738BC21C139210DD032CC6 /* HarrierQueue-Private.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1.0.0;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/HarrierQueue/HarrierQueue-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/HarrierQueue/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/HarrierQueue/HarrierQueue.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = HarrierQueue;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
@@ -400,9 +371,9 @@
 			};
 			name = Debug;
 		};
-		A23B01C88A535EB7CCE012353ABA87EA /* Release */ = {
+		8E915EF3FEEC821CEF4597F48D843F76 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5C2DA36ED2EEAE0FBC14A6BCB951B945 /* Pods-Harrier_Tests.release.xcconfig */;
+			baseConfigurationReference = 0A5EEBA351BC074648D3FE6AAAF71272 /* Pods-Harrier_Tests.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -415,6 +386,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-Harrier_Tests/Pods-Harrier_Tests.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_LDFLAGS = "";
@@ -429,9 +401,9 @@
 			};
 			name = Release;
 		};
-		A4D19AF17163E0A6B6C8618D18CB2C5D /* Debug */ = {
+		B39F0FB0E38D6D81F1B213EE1A1124CF /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0FE9DCDA973919FF040053752618125E /* Pods-Harrier_Tests.debug.xcconfig */;
+			baseConfigurationReference = A60906E41FC50D1F8EFCFF48934D9EE2 /* Pods-Harrier_Tests.debug.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -444,6 +416,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-Harrier_Tests/Pods-Harrier_Tests.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
 				OTHER_LDFLAGS = "";
@@ -459,15 +432,15 @@
 			};
 			name = Debug;
 		};
-		A6A4F4DFF435BD81AFC601DEBB94A6BF /* Debug */ = {
+		DAEC8CE65FDF21CC8B9DA16F401207F8 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 82ACA3CC16738BC21C139210DD032CC6 /* HarrierQueue-Private.xcconfig */;
+			baseConfigurationReference = E59EC271A506BA66DAA4E926E97EB45D /* HarrierQueue.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1.0.0;
+				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
+				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/HarrierQueue/HarrierQueue-prefix.pch";
@@ -487,6 +460,33 @@
 			};
 			name = Debug;
 		};
+		EAC7515129E160AA1E5BE80017D766F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E59EC271A506BA66DAA4E926E97EB45D /* HarrierQueue.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/HarrierQueue/HarrierQueue-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/HarrierQueue/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/HarrierQueue/HarrierQueue.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = HarrierQueue;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -499,20 +499,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7D0D6CECC1941E2980A62CF514E8159E /* Build configuration list for PBXNativeTarget "HarrierQueue" */ = {
+		3D20B5062D8D7E8E5BB759D4F687C7FB /* Build configuration list for PBXNativeTarget "HarrierQueue" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A6A4F4DFF435BD81AFC601DEBB94A6BF /* Debug */,
-				19D51CFAC9F42B539B24DF656DB62761 /* Release */,
+				DAEC8CE65FDF21CC8B9DA16F401207F8 /* Debug */,
+				EAC7515129E160AA1E5BE80017D766F7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F5700C31405074EC5E142EAB82FF72B1 /* Build configuration list for PBXNativeTarget "Pods-Harrier_Tests" */ = {
+		3EB288D843976C5A1D4A31049189B1E4 /* Build configuration list for PBXNativeTarget "Pods-Harrier_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A4D19AF17163E0A6B6C8618D18CB2C5D /* Debug */,
-				A23B01C88A535EB7CCE012353ABA87EA /* Release */,
+				B39F0FB0E38D6D81F1B213EE1A1124CF /* Debug */,
+				8E915EF3FEEC821CEF4597F48D843F76 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -3,7 +3,7 @@ use_frameworks!
 
 
 target 'Harrier_Tests', :exclusive => true do
-  pod "HarrierQueue", :path => "~/My\ Pods/HarrierQueue"
+  pod "HarrierQueue", :path => "~/Projects/My\ Projects/HarrierQueue"
 
   
 end

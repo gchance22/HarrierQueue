@@ -7,14 +7,11 @@
 //
 
 import Foundation
-import FMDB
 
 internal class HarrierQueueDatabase {
     
-    let databaseQueue: FMDatabaseQueue
     
     public init(filepath: String) {
         
-        databaseQueue = FMDatabaseQueue
     }
 }
