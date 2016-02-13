@@ -1,15 +1,15 @@
 import UIKit
 import XCTest
-import Harrier
+import HarrierQueue
 
 class Tests: XCTestCase {
     
-    var harrier: Harrier!
+    var harrier: HarrierQueue!
     
     override func setUp() {
         super.setUp()
         // Put setup code here. This method is called before the invocation of each test method in the class.
-        harrier = Harrier()
+        harrier = HarrierQueue()
     }
     
     override func tearDown() {
@@ -30,16 +30,14 @@ class Tests: XCTestCase {
     }
     
     func testQueuingProcess() {
-        let operation = NSOperation()
-        let task = HarrierTask(name: "", basePriority: 0, taskAttributes: [:])
+        let task = HarrierTask(name:"", priority: 0, taskAttributes: [:], retryLimit: 0, availabilityDate: NSDate())
         harrier.enqueueTask(task)
         XCTAssert(harrier.taskCount > 0, "Task was not queued properly")
     }
     
     
     func testPausingAndRestarting() {
-        let operation = NSOperation()
-        let task = HarrierTask(name: "", basePriority: 0, taskAttributes: [:])
+        let task = HarrierTask(name:"", priority: 0, taskAttributes: [:], retryLimit: 0, availabilityDate: NSDate())
         harrier.pause()
         harrier.enqueueTask(task)
         XCTAssert(!harrier.running && harrier.runningTasks.count == 0, "Harrier did not pause")
