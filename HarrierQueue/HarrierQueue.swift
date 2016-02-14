@@ -12,7 +12,7 @@ import Foundation
 //
 public class HarrierQueue: HarrierTaskDelegate {
     
-    private let database: HarrierQueueDatabase?
+    private let dataManager: HarrierQueueDataManager?
     
     /// Tasks waiting to be added to the activeQueue
     private var queuedTasks: [HarrierTask] = []
@@ -57,13 +57,13 @@ public class HarrierQueue: HarrierTaskDelegate {
     
     public init() {
         self._maxConcurrentTasks = 3
-        database = nil
+        dataManager = nil
     }
     
     public init(filepath: String) {
         self._maxConcurrentTasks = 3
-        self.database = HarrierQueueDatabase(filepath: filepath)
-        if self.database == nil {
+        self.dataManager = HarrierQueueDataManager(filepath: filepath)
+        if self.dataManager == nil {
             print("Failed to initialize database. The HarrierQueue will not be persistent.")
         }
     }
@@ -85,7 +85,7 @@ public class HarrierQueue: HarrierTaskDelegate {
     
     private func addTaskToDatabase(task: HarrierTask) {
         do {
-            try database?.addNewTask(task)
+            try dataManager?.addNewTask(task)
         } catch {
             print("Failed to add task with name \"\(task.name)\" to the queue.")
         }
@@ -94,7 +94,7 @@ public class HarrierQueue: HarrierTaskDelegate {
     private func incrementTaskFailCount(task: HarrierTask) {
         task.failCount++
         do {
-            try database?.updateTaskFailCount(task)
+            try dataManager?.updateTaskFailCount(task)
         } catch {
             print("Failed to increment task fail count for task \"\(task.name)\". This could affect how the queue treats this task!")
         }
@@ -102,7 +102,7 @@ public class HarrierQueue: HarrierTaskDelegate {
     
     private func removeTaskFromDatabase(task: HarrierTask) {
         do {
-            try database?.removeTask(task)
+            try dataManager?.removeTask(task)
         } catch {
             print("Failed to remove task \"\(task.name)\". This could cause it to be run again!")
         }

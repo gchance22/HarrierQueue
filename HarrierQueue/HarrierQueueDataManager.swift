@@ -9,7 +9,7 @@
 import Foundation
 import SQLite
 
-internal struct HarrierQueueDatabase {
+internal struct HarrierQueueDataManager {
     
     let db: Connection
     let tasks: Table

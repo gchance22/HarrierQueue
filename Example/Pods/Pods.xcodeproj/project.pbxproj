@@ -39,7 +39,7 @@
 		DE932233BA18E2BC74FBEC943B7E4723 /* R*Tree.swift in Sources */ = {isa = PBXBuildFile; fileRef = E648D070BEC06D181DFCFA23A0E62069 /* R*Tree.swift */; };
 		EBC7FF4E02334CBE7D25BAA6EF620B91 /* SQLite-Bridging.h in Headers */ = {isa = PBXBuildFile; fileRef = 244E36380B4B3465B8F7B761894265FC /* SQLite-Bridging.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F9AED655442DBCE4F281A4719FA77C6B /* HarrierQueue-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 523488B6284B35E9F04DB0058F735085 /* HarrierQueue-dummy.m */; };
-		FB7DA26ABAD430C9E0EAF2E53A491749 /* HarrierQueueDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B22393A4CDA86758F2813C7689CB7B /* HarrierQueueDatabase.swift */; };
+		FB7DA26ABAD430C9E0EAF2E53A491749 /* HarrierQueueDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B22393A4CDA86758F2813C7689CB7B /* HarrierQueueDataManager.swift */; };
 		FDEA3AE34D8C96E2BA74198D1385379A /* Foundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E4944BEDA928C7D63606EE3DDACC1B /* Foundation.swift */; };
 /* End PBXBuildFile section */
 
@@ -100,7 +100,7 @@
 		95CFD1B334C6D91CA0FBC1B356314A97 /* CoreFunctions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CoreFunctions.swift; path = SQLite/Typed/CoreFunctions.swift; sourceTree = "<group>"; };
 		9CC79165663BB8B97229A42F4CA8C8EC /* Query.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Query.swift; path = SQLite/Typed/Query.swift; sourceTree = "<group>"; };
 		9DA0B4CD1FD39AB4AAEA8817C4022550 /* Pods-Harrier_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Harrier_Tests-frameworks.sh"; sourceTree = "<group>"; };
-		A1B22393A4CDA86758F2813C7689CB7B /* HarrierQueueDatabase.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HarrierQueueDatabase.swift; sourceTree = "<group>"; };
+		A1B22393A4CDA86758F2813C7689CB7B /* HarrierQueueDataManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HarrierQueueDataManager.swift; sourceTree = "<group>"; };
 		A1BA4E824AD6FD9E80A1EFB23C9D8C59 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		A3D1741A7E14E0810C65FC37AE4180D9 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A5904F49515B0FE10EBB8205C2876ECF /* SQLite.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SQLite.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -186,7 +186,7 @@
 			isa = PBXGroup;
 			children = (
 				558C5F31FC8478E82BF36CBDACC214A7 /* HarrierQueue.swift */,
-				A1B22393A4CDA86758F2813C7689CB7B /* HarrierQueueDatabase.swift */,
+				A1B22393A4CDA86758F2813C7689CB7B /* HarrierQueueDataManager.swift */,
 				6750F7AF7061C2BC1AD0A015BEBAC7B7 /* HarrierQueueDelegate.swift */,
 				11AA3073DB8E14C211E850DD66BC2E2F /* HarrierTask.swift */,
 			);
@@ -464,7 +464,7 @@
 			files = (
 				F9AED655442DBCE4F281A4719FA77C6B /* HarrierQueue-dummy.m in Sources */,
 				75763EB0167CE6D1C8A1C27E2984934C /* HarrierQueue.swift in Sources */,
-				FB7DA26ABAD430C9E0EAF2E53A491749 /* HarrierQueueDatabase.swift in Sources */,
+				FB7DA26ABAD430C9E0EAF2E53A491749 /* HarrierQueueDataManager.swift in Sources */,
 				934C76631780D34976FEE2BCC8E68267 /* HarrierQueueDelegate.swift in Sources */,
 				C5715D64F27BB47C4FFDC1E9E7E1B6D0 /* HarrierTask.swift in Sources */,
 			);
