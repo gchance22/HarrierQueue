@@ -101,7 +101,11 @@ public class HarrierQueue: HarrierTaskDelegate {
     }
     
     private func removeTaskFromDatabase(task: HarrierTask) {
-        
+        do {
+            try database?.removeTask(task)
+        } catch {
+            print("Failed to remove task \"\(task.name)\". This could cause it to be run again!")
+        }
     }
     
     // MARK: Public API

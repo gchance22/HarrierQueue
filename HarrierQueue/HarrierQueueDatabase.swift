@@ -60,4 +60,9 @@ internal struct HarrierQueueDatabase {
 
     }
     
+    internal func removeTask(task: HarrierTask) throws {
+        let dbtask = tasks.filter(uid == task.uniqueIdentifier)
+        try db.run(dbtask.delete())
+    }
+    
 }
