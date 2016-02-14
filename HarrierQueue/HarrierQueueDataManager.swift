@@ -1,5 +1,5 @@
 //
-//  HarrierQueueDatabase.swift
+//  HarrierQueueDataManager.swift
 //  Pods
 //
 //  Created by Graham Chance on 8/30/15.
@@ -63,6 +63,22 @@ internal struct HarrierQueueDataManager {
     internal func removeTask(task: HarrierTask) throws {
         let dbtask = tasks.filter(uid == task.uniqueIdentifier)
         try db.run(dbtask.delete())
+    }
+    
+    internal func fetchTasksFromDB(complete:[HarrierTask]->()) {
+        // TODO: Run on background thread
+        var savedTasks = [HarrierTask]()
+        do {
+            for dbtask in try db.prepare(tasks) {
+                let task = HarrierTask(name: dbtask[name], priority: dbtask[priorityLevel], taskAttributes: [:], retryLimit: dbtask[retryLimit], availabilityDate: dbtask[availabilityDate])
+                task.dateCreated = dbtask[dateCreated]
+                task.failCount = dbtask[failCount]
+                savedTasks.append(task)
+            }
+        } catch {
+            print("Could not load tasks.")
+        }
+        complete(savedTasks)
     }
     
 }

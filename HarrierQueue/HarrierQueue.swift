@@ -65,6 +65,12 @@ public class HarrierQueue: HarrierTaskDelegate {
         self.dataManager = HarrierQueueDataManager(filepath: filepath)
         if self.dataManager == nil {
             print("Failed to initialize database. The HarrierQueue will not be persistent.")
+        } else {
+            self.dataManager?.fetchTasksFromDB() { tasks in
+                for task in tasks {
+                    self.enqueueTask(task)
+                }
+            }
         }
     }
     

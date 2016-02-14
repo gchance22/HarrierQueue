@@ -45,7 +45,7 @@ public class HarrierTask: Equatable {
     public let priorityLevel: Int64
     
     /// The date the task was first initialized.
-    public let dateCreated: NSTimeInterval
+    public var dateCreated: NSTimeInterval
     
     /// The number of times the task can be retried before it is abandoned.
     public var retryLimit: Int64
