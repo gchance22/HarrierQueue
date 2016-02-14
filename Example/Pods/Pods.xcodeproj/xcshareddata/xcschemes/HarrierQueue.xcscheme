@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '42E878FAB6269F466F907363'
+               BlueprintIdentifier = 'F848FDB10A0F1DAA29666067'
                BlueprintName = 'HarrierQueue'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'HarrierQueue.framework'>

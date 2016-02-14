@@ -34,6 +34,7 @@ Pod::Spec.new do |s|
   #   'Harrier' => ['Pod/Assets/*.png']
   # }
 
+   s.dependency 'SQLite.swift', '~> 0.9'
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
 end

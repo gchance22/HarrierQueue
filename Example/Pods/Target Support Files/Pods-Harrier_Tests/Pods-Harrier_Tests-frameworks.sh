@@ -85,7 +85,9 @@ strip_invalid_archs() {
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "Pods-Harrier_Tests/HarrierQueue.framework"
+  install_framework "Pods-Harrier_Tests/SQLite.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "Pods-Harrier_Tests/HarrierQueue.framework"
+  install_framework "Pods-Harrier_Tests/SQLite.framework"
 fi

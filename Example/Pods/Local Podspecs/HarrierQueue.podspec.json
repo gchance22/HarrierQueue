@@ -16,5 +16,10 @@
     "ios": "8.0"
   },
   "requires_arc": true,
-  "source_files": "HarrierQueue/**/*"
+  "source_files": "HarrierQueue/**/*",
+  "dependencies": {
+    "SQLite.swift": [
+      "~> 0.9"
+    ]
+  }
 }

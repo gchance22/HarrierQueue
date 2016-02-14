@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import SQLite
 
 internal class HarrierQueueDatabase {
     
