@@ -36,22 +36,22 @@ public class HarrierTask: Equatable {
     private var delegate: HarrierTaskDelegate?
     
     /// The number of times the task has failed.
-    internal var failCount: Int
+    internal var failCount: Int64
 
     /// The name of the task. Not required. Note it is used in the uniqueIdentifier.
     public let name: String?
     
     /// The priority measurement that ranks above all others. 0 (low priority) - infinity (high priority)
-    public let priorityLevel: Int
+    public let priorityLevel: Int64
     
     /// The date the task was first initialized.
     public let dateCreated: NSTimeInterval
     
     /// The number of times the task can be retried before it is abandoned.
-    public var retryLimit: Int
+    public var retryLimit: Int64
     
     /// Any data or information that the task holds.
-    public let data: [String: AnyObject]
+    public let data: [String: String]
     
     /// The soonest the task can be executed.
     public var availabilityDate: NSDate
@@ -61,12 +61,12 @@ public class HarrierTask: Equatable {
         var identifier = ""
         if let taskName = name { identifier += taskName }
         for (key, value) in data {
-            identifier += "-\(key):\(value.stringValue)"
+            identifier += "-\(key):\(value)"
         }
         return identifier
     }
     
-    public init(name: String?, priority: Int, taskAttributes: [String: String], retryLimit: Int, availabilityDate: NSDate) {
+    public init(name: String?, priority: Int64, taskAttributes: [String: String], retryLimit: Int64, availabilityDate: NSDate) {
         self.name             = name
         self.priorityLevel    = priority
         self.data   = taskAttributes

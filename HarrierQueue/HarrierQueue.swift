@@ -10,7 +10,9 @@ import Foundation
 // Montagu's Harrier
 // "As this bird has a wide distribution, it will take whatever prey is available in the area where it nests [and add them to its task queue]" - Wikipedia
 //
-public class HarrierQueue: NSObject, HarrierTaskDelegate {
+public class HarrierQueue: HarrierTaskDelegate {
+    
+    private let database: HarrierQueueDatabase?
     
     /// Tasks waiting to be added to the activeQueue
     private var queuedTasks: [HarrierTask] = []
@@ -53,9 +55,17 @@ public class HarrierQueue: NSObject, HarrierTaskDelegate {
         return queuedTasks.count + activeTasks.count
     }
     
-    public override init() {
+    public init() {
         self._maxConcurrentTasks = 3
-        super.init()
+        database = nil
+    }
+    
+    public init(filepath: String) {
+        self._maxConcurrentTasks = 3
+        self.database = HarrierQueueDatabase(filepath: filepath)
+        if self.database == nil {
+            print("Failed to initialize database. The HarrierQueue will not be persistent.")
+        }
     }
     
     private func dequeueNextTask() {
@@ -74,12 +84,20 @@ public class HarrierQueue: NSObject, HarrierTaskDelegate {
     }
     
     private func addTaskToDatabase(task: HarrierTask) {
-        //TODO: implement
+        do {
+            try database?.addNewTask(task)
+        } catch {
+            print("Failed to add task with name \"\(task.name)\" to the queue.")
+        }
     }
     
     private func incrementTaskFailCount(task: HarrierTask) {
         task.failCount++
-        //TODO: update database
+        do {
+            try database?.updateTaskFailCount(task)
+        } catch {
+            print("Failed to increment task fail count for task \"\(task.name)\". This could affect how the queue treats this task!")
+        }
     }
     
     private func removeTaskFromDatabase(task: HarrierTask) {
