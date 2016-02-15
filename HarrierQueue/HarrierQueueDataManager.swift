@@ -70,7 +70,7 @@ internal struct HarrierQueueDataManager {
         try db.run(dbtask.delete())
     }
     
-    internal func fetchTasksFromDB(complete:[HarrierTask]->()) {
+    internal func fetchTasksFromDB()->[HarrierTask] {
         var savedTasks = [HarrierTask]()
         do {
             for dbtask in try db.prepare(tasks) {
@@ -82,7 +82,7 @@ internal struct HarrierQueueDataManager {
         } catch {
             print("Could not load tasks.")
         }
-        complete(savedTasks)
+        return savedTasks
     }
     
 }

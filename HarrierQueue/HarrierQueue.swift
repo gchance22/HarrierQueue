@@ -17,6 +17,7 @@ public protocol HarrierQueueDelegate {
 
 public class HarrierQueue: HarrierTaskDelegate {
     
+    // The dataManager is in charge of fetching saved tasks and updating the database
     private let dataManager: HarrierQueueDataManager?
     
     /// Tasks waiting to be added to the activeQueue
@@ -71,7 +72,7 @@ public class HarrierQueue: HarrierTaskDelegate {
         if self.dataManager == nil {
             print("Failed to initialize database. The HarrierQueue will not be persistent.")
         } else {
-            self.dataManager?.fetchTasksFromDB() { tasks in
+            if let tasks = self.dataManager?.fetchTasksFromDB() {
                 for task in tasks {
                     self.enqueueTask(task,persist: false)
                 }
