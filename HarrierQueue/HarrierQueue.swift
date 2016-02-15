@@ -10,6 +10,11 @@ import Foundation
 // Montagu's Harrier
 // "As this bird has a wide distribution, it will take whatever prey is available in the area where it nests [and add them to its task queue]" - Wikipedia
 //
+
+public protocol HarrierQueueDelegate {
+    func executeTask(task: HarrierTask)
+}
+
 public class HarrierQueue: HarrierTaskDelegate {
     
     private let dataManager: HarrierQueueDataManager?
@@ -212,8 +217,7 @@ public class HarrierQueue: HarrierTaskDelegate {
         } else if status == .Failed {
             if task.failCount <= task.retryLimit {
                 incrementTaskFailCount(task)
-                //TODO: set new availabilityDate
-                
+                task.availabilityDate = NSDate()
                 // Requeue task.
                 enqueueTask(task)
             } else {

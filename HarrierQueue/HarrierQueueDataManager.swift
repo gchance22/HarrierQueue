@@ -71,7 +71,6 @@ internal struct HarrierQueueDataManager {
     }
     
     internal func fetchTasksFromDB(complete:[HarrierTask]->()) {
-        // TODO: Run on background thread
         var savedTasks = [HarrierTask]()
         do {
             for dbtask in try db.prepare(tasks) {
