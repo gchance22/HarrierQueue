@@ -68,7 +68,7 @@ public class HarrierQueue: HarrierTaskDelegate {
         } else {
             self.dataManager?.fetchTasksFromDB() { tasks in
                 for task in tasks {
-                    self.enqueueTask(task)
+                    self.enqueueTask(task,persist: false)
                 }
             }
         }
@@ -146,7 +146,15 @@ public class HarrierQueue: HarrierTaskDelegate {
     
     :param: task Task to queued.
     */
-    public func enqueueTask(task: HarrierTask) {
+    public func enqueueTask(task: HarrierTask, persist: Bool = true) {
+        if persist {
+            do {
+                try dataManager?.addNewTask(task)
+            } catch {
+                print("Failed to add task \"\(task.name)\" to database. It won't persist.")
+                print(error)
+            }
+        }
         queuedTasks.append(task)
         sortQueue()
         if activeTasks.count < maxConcurrentTasks && running {
@@ -159,7 +167,15 @@ public class HarrierQueue: HarrierTaskDelegate {
     
     :param: task Task to enqueue.
     */
-    public func enqueueUniqueTask(task: HarrierTask) {
+    public func enqueueUniqueTask(task: HarrierTask, persist: Bool = true) {
+        if persist {
+            do {
+                try dataManager?.addNewTask(task)
+            } catch {
+                print("Failed to add task \"\(task.name)\" to database. It won't persist.")
+                print(error)
+            }
+        }
         if !tasks.contains(task) {
             enqueueTask(task)
         } else {

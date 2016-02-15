@@ -29,10 +29,16 @@ internal struct HarrierQueueDataManager {
             name = Expression<String?>("name")
             failCount = Expression<Int64>("failCount")
             priorityLevel = Expression<Int64>("priorityLevel")
-            dateCreated = Expression<NSTimeInterval>("priorityLevel")
+            dateCreated = Expression<NSTimeInterval>("dateCreated")
             retryLimit = Expression<Int64>("retryLimit")
             availabilityDate = Expression<NSDate>("availabilityDate")
-
+        } catch {
+            print("\n\n")
+            print(error)
+            return nil
+        }
+        
+        do {
             try db.run(tasks.create { t in
                 t.column(uid, primaryKey: true)
                 t.column(name)
@@ -42,15 +48,14 @@ internal struct HarrierQueueDataManager {
                 t.column(retryLimit)
                 t.column(availabilityDate)
                 })
-            
-        } catch {
-            return nil
+        } catch  {
+            // assume for now that it failed because the table already exists
         }
     }
     
     
     internal func addNewTask(task: HarrierTask) throws {
-        let insert = tasks.insert(name <- task.name, failCount <- task.failCount, priorityLevel <- task.priorityLevel, dateCreated <- task.dateCreated, retryLimit <- task.retryLimit, availabilityDate <- task.availabilityDate)
+        let insert = tasks.insert(uid <- task.uniqueIdentifier, name <- task.name, failCount <- task.failCount, priorityLevel <- task.priorityLevel, dateCreated <- task.dateCreated, retryLimit <- task.retryLimit, availabilityDate <- task.availabilityDate)
         try db.run(insert)
     }
     

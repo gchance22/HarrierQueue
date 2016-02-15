@@ -4,13 +4,28 @@ import HarrierQueue
 
 class Tests: XCTestCase {
     
-    var harrier: HarrierQueue!
+    var dbPath : NSURL = {
+        let fm = NSFileManager.defaultManager()
+        let url = try! fm.URLForDirectory(NSSearchPathDirectory.CachesDirectory,
+            inDomain: NSSearchPathDomainMask.UserDomainMask,
+            appropriateForURL: nil, create: true)
+        return url.URLByAppendingPathComponent("db.sqlite3")
+    }()
+
     
     override func setUp() {
         super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-        harrier = HarrierQueue()
+        deleteDBFile()
     }
+    
+    func deleteDBFile() {
+        do {
+            if NSFileManager.defaultManager().fileExistsAtPath(dbPath.absoluteString) {
+                try NSFileManager.defaultManager().removeItemAtURL(dbPath)
+            }
+        } catch { }
+    }
+
     
     override func tearDown() {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
@@ -29,7 +44,13 @@ class Tests: XCTestCase {
         }
     }
     
+    func testDBFileCreation() {
+        let _ = HarrierQueue(filepath: dbPath.absoluteString)
+        XCTAssert(NSFileManager.defaultManager().fileExistsAtPath(dbPath.path!), "No DB file was created")
+    }
+    
     func testQueuingProcess() {
+        let harrier = HarrierQueue()
         let task = HarrierTask(name:"", priority: 0, taskAttributes: [:], retryLimit: 0, availabilityDate: NSDate())
         harrier.enqueueTask(task)
         XCTAssert(harrier.taskCount > 0, "Task was not queued properly")
@@ -37,13 +58,25 @@ class Tests: XCTestCase {
     
     
     func testPausingAndRestarting() {
+        let harrier = HarrierQueue()
         let task = HarrierTask(name:"", priority: 0, taskAttributes: [:], retryLimit: 0, availabilityDate: NSDate())
         harrier.pause()
         harrier.enqueueTask(task)
-        XCTAssert(!harrier.running && harrier.runningTasks.count == 0, "Harrier did not pause")
+        XCTAssert(!harrier.running, "Harrier did not pause")
+        XCTAssert(harrier.runningTasks.count == 0, "Harrier did not actually pause")
         harrier.restart()
         XCTAssert(harrier.running && harrier.runningTasks.count > 0, "Harrier did not restart")
-
+    }
+    
+    func testPersistence() {
+        let harrier = HarrierQueue(filepath: dbPath.absoluteString)
+        harrier.pause()
+        let availDate = NSDate()
+        let task = HarrierTask(name:"", priority: 0, taskAttributes: [:], retryLimit: 0, availabilityDate: availDate)
+        harrier.enqueueTask(task)
+        deleteDBFile()
+        let harrier2 = HarrierQueue(filepath: dbPath.absoluteString)
+        XCTAssert(harrier2.taskCount == 1, "Harrier did not persist")
     }
 
 }
