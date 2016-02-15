@@ -1,4 +1,4 @@
-# Harrier
+# Harrier Queue
 
 [![CI Status](http://img.shields.io/travis/gchance22/Harrier.svg?style=flat)](https://travis-ci.org/gchance22/Harrier)
 [![Version](https://img.shields.io/cocoapods/v/Harrier.svg?style=flat)](http://cocoapods.org/pods/Harrier)
