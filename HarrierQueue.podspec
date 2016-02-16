@@ -16,14 +16,13 @@ Pod::Spec.new do |s|
 #   * Try to keep it short, snappy and to the point.
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!
-  s.description      = <<-DESC
-                       DESC
+  s.description      = "HarrierQueue is a Persistent Task Queue written in Swift. It is brand new and may have a few issues, but so far, it has survived testing!"
 
-  s.homepage         = "https://github.com/<GITHUB_USERNAME>/HarrierQueue"
+  s.homepage         = "https://github.com/gchance22/HarrierQueue"
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
-  s.author           = { "gchance22" => "graham@gtcsoftware.com" }
-  s.source           = { :git => "https://github.com/<GITHUB_USERNAME>/HarrierQueue.git", :tag => s.version.to_s }
+  s.author           = { "gchance22" => "gtchance@colby.edu" }
+  s.source           = { :git => "https://github.com/gchance22/HarrierQueue.git", :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.platform     = :ios, '8.0'
