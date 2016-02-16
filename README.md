@@ -5,6 +5,8 @@
 [![License](https://img.shields.io/cocoapods/l/HarrierrQueue.svg?style=flat)](http://cocoapods.org/pods/HarrierQueue)
 [![Platform](https://img.shields.io/cocoapods/p/HarrierrQueue.svg?style=flat)](http://cocoapods.org/pods/HarrierQueue)
 
+##### "As this bird has a wide distribution, it will take whatever prey is available in the area where it nests [and add them to its task queue]" - Wikipedia
+
 ## Usage
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
