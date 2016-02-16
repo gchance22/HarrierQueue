@@ -45,13 +45,13 @@ public class HarrierTask: Equatable {
     public let priorityLevel: Int64
     
     /// The date the task was first initialized.
-    public var dateCreated: NSTimeInterval
+    public let dateCreated: NSDate
     
     /// The number of times the task can be retried before it is abandoned.
-    public var retryLimit: Int64
+    public let retryLimit: Int64
     
     /// Any data or information that the task holds.
-    public let data: [String: String]
+    public let data: NSDictionary
     
     /// The soonest the task can be executed.
     public var availabilityDate: NSDate
@@ -66,18 +66,18 @@ public class HarrierTask: Equatable {
         return identifier
     }
     
-    public init(name: String?, priority: Int64, taskAttributes: [String: String], retryLimit: Int64, availabilityDate: NSDate) {
+    public init(name: String?, priority: Int64, taskAttributes: [String: String], retryLimit: Int64, availabilityDate: NSDate, dateCreated: NSDate = NSDate()) {
         self.name             = name
         self.priorityLevel    = priority
         self.data   = taskAttributes
         self.retryLimit       = retryLimit
         self.availabilityDate = availabilityDate
-        self.dateCreated      = NSDate().timeIntervalSince1970
+        self.dateCreated      = dateCreated
         self.failCount        = 0
     }
     
     public func isHigherPriority(thanTask other: HarrierTask) -> Bool {
-        return priorityLevel > other.priorityLevel || (priorityLevel == other.priorityLevel && failCount < other.failCount && dateCreated < other.dateCreated)
+        return priorityLevel > other.priorityLevel || (priorityLevel == other.priorityLevel && failCount < other.failCount && dateCreated.timeIntervalSince1970 < other.dateCreated.timeIntervalSince1970)
     }
     
     public func completeWithStatus(completionStatus: HarrierTaskCompletionStatus) {

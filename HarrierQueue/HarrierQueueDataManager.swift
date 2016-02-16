@@ -17,10 +17,11 @@ internal struct HarrierQueueDataManager {
     let name: Expression<String?>
     let failCount: Expression<Int64>
     let priorityLevel: Expression<Int64>
-    let dateCreated: Expression<NSTimeInterval>
+    let dateCreated: Expression<NSDate>
     let retryLimit: Expression<Int64>
     let availabilityDate: Expression<NSDate>
-    
+    let data: Expression<String>
+
     internal init?(filepath: String) {
         do {
             db = try Connection(filepath)
@@ -29,9 +30,10 @@ internal struct HarrierQueueDataManager {
             name = Expression<String?>("name")
             failCount = Expression<Int64>("failCount")
             priorityLevel = Expression<Int64>("priorityLevel")
-            dateCreated = Expression<NSTimeInterval>("dateCreated")
+            dateCreated = Expression<NSDate>("dateCreated")
             retryLimit = Expression<Int64>("retryLimit")
             availabilityDate = Expression<NSDate>("availabilityDate")
+            data = Expression<String>("data")
         } catch {
             print("\n\n")
             print(error)
@@ -47,6 +49,7 @@ internal struct HarrierQueueDataManager {
                 t.column(dateCreated)
                 t.column(retryLimit)
                 t.column(availabilityDate)
+                t.column(data)
                 })
         } catch  {
             // assume for now that it failed because the table already exists
@@ -55,7 +58,16 @@ internal struct HarrierQueueDataManager {
     
     
     internal func addNewTask(task: HarrierTask) throws {
-        let insert = tasks.insert(uid <- task.uniqueIdentifier, name <- task.name, failCount <- task.failCount, priorityLevel <- task.priorityLevel, dateCreated <- task.dateCreated, retryLimit <- task.retryLimit, availabilityDate <- task.availabilityDate)
+        var dataAsString = ""
+        do {
+            if let s = String.init(data: try NSJSONSerialization.dataWithJSONObject(task.data, options: NSJSONWritingOptions.init(rawValue: 0)), encoding: NSUTF8StringEncoding) {
+                dataAsString = s
+            }
+        } catch {
+            print("Failed to serialize data for task \"\(task.name)\". This info won't be saved.")
+            print(error)
+        }
+        let insert = tasks.insert(uid <- task.uniqueIdentifier, name <- task.name, failCount <- task.failCount, priorityLevel <- task.priorityLevel, dateCreated <- task.dateCreated, retryLimit <- task.retryLimit, availabilityDate <- task.availabilityDate, data <- dataAsString)
         try db.run(insert)
     }
     
@@ -74,9 +86,17 @@ internal struct HarrierQueueDataManager {
         var savedTasks = [HarrierTask]()
         do {
             for dbtask in try db.prepare(tasks) {
-                let task = HarrierTask(name: dbtask[name], priority: dbtask[priorityLevel], taskAttributes: [:], retryLimit: dbtask[retryLimit], availabilityDate: dbtask[availabilityDate])
-                task.dateCreated = dbtask[dateCreated]
+                var taskData = [String: String]()
+                if let encodedData = dbtask[data].dataUsingEncoding(NSUTF8StringEncoding) {
+                    if let decodedData = try NSJSONSerialization.JSONObjectWithData(encodedData, options: NSJSONReadingOptions.init(rawValue: 0)) as? [String: String] {
+                        taskData = decodedData
+                    }
+                }
+                let task = HarrierTask(name: dbtask[name], priority: dbtask[priorityLevel], taskAttributes: taskData, retryLimit: dbtask[retryLimit], availabilityDate: dbtask[availabilityDate],dateCreated: dbtask[dateCreated])
                 task.failCount = dbtask[failCount]
+               // task.userInfo = [NSJSONSerialization JSONObjectWithData:[resultDictionary[@"userInfo"] dataUsingEncoding:NSUTF8StringEncoding] options:0 error:NULL] ?: @{};
+                
+                
                 savedTasks.append(task)
             }
         } catch {

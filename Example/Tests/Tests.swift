@@ -72,11 +72,15 @@ class Tests: XCTestCase {
         let harrier = HarrierQueue(filepath: dbPath.absoluteString)
         harrier.pause()
         let availDate = NSDate()
-        let task = HarrierTask(name:"", priority: 0, taskAttributes: [:], retryLimit: 0, availabilityDate: availDate)
+        let testDic = ["key":"value", "key2": "value2"]
+        let task = HarrierTask(name:"", priority: 0, taskAttributes: testDic, retryLimit: 0, availabilityDate: availDate)
         harrier.enqueueTask(task)
-        deleteDBFile()
         let harrier2 = HarrierQueue(filepath: dbPath.absoluteString)
         XCTAssert(harrier2.taskCount == 1, "Harrier did not persist")
+        if let recoveredTask = harrier2.tasks.first {
+            XCTAssert(testDic == recoveredTask.data, "Harrier did not persist")
+        }
+
     }
 
 }
