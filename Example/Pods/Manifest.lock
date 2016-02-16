@@ -12,7 +12,7 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   HarrierQueue:
-    :commit: 0897ad66a81855ac944f07c2addfc286a60268a4
+    :commit: 2ee72aa42cac68b3f6dec767b5299c176b133336
     :git: https://github.com/gchance22/HarrierQueue.git
 
 SPEC CHECKSUMS:
