@@ -1,17 +1,22 @@
 PODS:
-  - HarrierQueue (1.0.0):
+  - HarrierQueue (0.0.1):
     - SQLite.swift (~> 0.9)
   - SQLite.swift (0.9.2)
 
 DEPENDENCIES:
-  - HarrierQueue (from `..`)
+  - HarrierQueue (from `https://github.com/gchance22/HarrierQueue.git`)
 
 EXTERNAL SOURCES:
   HarrierQueue:
-    :path: ..
+    :git: https://github.com/gchance22/HarrierQueue.git
+
+CHECKOUT OPTIONS:
+  HarrierQueue:
+    :commit: 0897ad66a81855ac944f07c2addfc286a60268a4
+    :git: https://github.com/gchance22/HarrierQueue.git
 
 SPEC CHECKSUMS:
-  HarrierQueue: 725ca9c502a2b8cfcb143abb50fc5ca721894be7
+  HarrierQueue: 9c54475b9c1344b485cda0bf2630ea4292eb1943
   SQLite.swift: 5dca22dbf6634fdb9c3270fae9491830804e9b2d
 
 COCOAPODS: 0.39.0

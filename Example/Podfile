@@ -3,7 +3,7 @@ use_frameworks!
 
 
 target 'Harrier_Tests', :exclusive => true do
-  pod "HarrierQueue", :path => ".."
+  pod "HarrierQueue", :git => "https://github.com/gchance22/HarrierQueue.git"
 
   
 end
