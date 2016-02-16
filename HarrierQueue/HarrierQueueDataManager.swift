@@ -94,9 +94,6 @@ internal struct HarrierQueueDataManager {
                 }
                 let task = HarrierTask(name: dbtask[name], priority: dbtask[priorityLevel], taskAttributes: taskData, retryLimit: dbtask[retryLimit], availabilityDate: dbtask[availabilityDate],dateCreated: dbtask[dateCreated])
                 task.failCount = dbtask[failCount]
-               // task.userInfo = [NSJSONSerialization JSONObjectWithData:[resultDictionary[@"userInfo"] dataUsingEncoding:NSUTF8StringEncoding] options:0 error:NULL] ?: @{};
-                
-                
                 savedTasks.append(task)
             }
         } catch {
