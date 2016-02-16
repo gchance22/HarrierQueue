@@ -1,7 +1,7 @@
 //
 //  HarrierQueue.swift
 //  HarrierQueue
-//  Version 1.0.0
+//  Version 0.0.1
 //  Created by Graham Chance on 8/28/15.
 //
 
