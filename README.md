@@ -3,11 +3,11 @@
 ##### "As this bird has a wide distribution, it will take whatever prey is available in the area where it nests [and add them to its task queue]" - Wikipedia
 
 ## Usage
-
+```swift
 let queue = HarrierQueue(filepath: "path/to/save/db.sqlite")
 let task = HarrierTask(name:"A task", priority: 0, taskAttributes: ["key1": "value", "key2": "value"], retryLimit: 3, availabilityDate: NSDate())
 queue.enqueueTask(task)
-
+```
 
 ## Requirements
 
