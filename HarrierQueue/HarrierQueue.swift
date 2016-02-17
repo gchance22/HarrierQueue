@@ -151,6 +151,7 @@ public class HarrierQueue: HarrierTaskDelegate {
     Queues up the task. Note: To prevent queueing duplicates, use enqueueTask()
     
     :param: task Task to queued.
+    :param: persist Whether the task should be saved to the database.
     */
     public func enqueueTask(task: HarrierTask, persist: Bool = true) {
         if persist {
@@ -203,6 +204,7 @@ public class HarrierQueue: HarrierTaskDelegate {
         }
         return nil
     }
+    
     
     public func taskDidCompleteWithStatus(task: HarrierTask, status: HarrierTaskCompletionStatus) {
         // Remove the task from the active queue.
