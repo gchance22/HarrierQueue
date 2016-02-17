@@ -8,15 +8,29 @@
 
 import Foundation
 
+/// No retry constant.
+public let kNoRetryLimit = -1
 
-let kNoRetryLimit = -1
-
+/**
+ Task status.
+ 
+ - Waiting: Queued, but not running.
+ - Running: Currently running.
+ - Done:    Done running.
+ */
 public enum HarrierTaskStatus: String {
     case Waiting = "Waiting"
     case Running = "Running"
     case Done    = "Success"
 }
 
+/**
+ Completion status of a task.
+ 
+ - Success: Completed entirely with no issues.
+ - Failed:  Failed to complete.
+ - Abandon: Task has been abandoned, i.e. not completed, but will not be attempted again.
+ */
 public enum HarrierTaskCompletionStatus: String {
     case Success = "Success"
     case Failed = "Failed"
@@ -24,11 +38,15 @@ public enum HarrierTaskCompletionStatus: String {
 }
 
 
+/**
+ *  The delegate for HarrierTasks.
+ */
 public protocol HarrierTaskDelegate {
     func taskDidCompleteWithStatus(task: HarrierTask, status: HarrierTaskCompletionStatus)
 }
 
 
+/// A Task to be queued in a HarrierQueue.
 public class HarrierTask: Equatable {
     
     private var status: HarrierTaskStatus?
@@ -56,7 +74,7 @@ public class HarrierTask: Equatable {
     /// The soonest the task can be executed.
     public var availabilityDate: NSDate
     
-    
+    /// A combination of task name and data, creating a unique ID.
     public var uniqueIdentifier: String {
         var identifier = ""
         if let taskName = name { identifier += taskName }
@@ -66,6 +84,18 @@ public class HarrierTask: Equatable {
         return identifier
     }
     
+    /**
+     HarrierTask Initializer.
+     
+     - parameter name:             Task name.
+     - parameter priority:         Priority of task relative to others (0 is lowest priority).
+     - parameter taskAttributes:   A dictionary of any data the task contains.
+     - parameter retryLimit:       How many times the task should be reattempted if it fails.
+     - parameter availabilityDate: Date the task can be first attempted.
+     - parameter dateCreated:      Current date by default. Don't change unless you have a good reason.
+     
+     - returns: Returns a new HarrierTask with the given properties.
+     */
     public init(name: String?, priority: Int64, taskAttributes: [String: String], retryLimit: Int64, availabilityDate: NSDate, dateCreated: NSDate = NSDate()) {
         self.name             = name
         self.priorityLevel    = priority
@@ -76,16 +106,29 @@ public class HarrierTask: Equatable {
         self.failCount        = 0
     }
     
+    /**
+     Compares the task to another, based on priority in the queue.
+     
+     - parameter other: The task to compare to.
+     
+     - returns: Returns whether this task is higher priority to the given task.
+     */
     public func isHigherPriority(thanTask other: HarrierTask) -> Bool {
         return priorityLevel > other.priorityLevel || (priorityLevel == other.priorityLevel && failCount < other.failCount && dateCreated.timeIntervalSince1970 < other.dateCreated.timeIntervalSince1970)
     }
     
-    public func completeWithStatus(completionStatus: HarrierTaskCompletionStatus) {
+    /**
+     Completes the task.
+     
+     - parameter completionStatus: The status of completion, i.e. success, failed, or abandoned.
+     */
+    internal func completeWithStatus(completionStatus: HarrierTaskCompletionStatus) {
         self.status = .Done
         delegate?.taskDidCompleteWithStatus(self, status: completionStatus)
     }
     
 }
+
 
 public func ==(lhs: HarrierTask, rhs: HarrierTask) -> Bool {
     return lhs.uniqueIdentifier == rhs.uniqueIdentifier

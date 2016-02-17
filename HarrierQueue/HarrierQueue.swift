@@ -11,10 +11,14 @@ import Foundation
 // "As this bird has a wide distribution, it will take whatever prey is available in the area where it nests [and add them to its task queue]" - Wikipedia
 //
 
+/**
+*  The delegate in charge of performing the necessary actions for given tasks.
+*/
 public protocol HarrierQueueDelegate {
     func executeTask(task: HarrierTask)
 }
 
+/// A queue for HarrierTasks.
 public class HarrierQueue: HarrierTaskDelegate {
     
     // The dataManager is in charge of fetching saved tasks and updating the database
@@ -57,15 +61,28 @@ public class HarrierQueue: HarrierTaskDelegate {
         return activeTasks
     }
     
+    /// Number of tasks queued and active.
     public var taskCount: Int {
         return queuedTasks.count + activeTasks.count
     }
     
+    /**
+     Non-Persistent Queue Initializer.
+     
+     - returns: A new non-persistent HarrierQueue with maxConcurrentTasks of 3.
+     */
     public init() {
         self._maxConcurrentTasks = 3
         dataManager = nil
     }
     
+    /**
+     Persistent Queue Initializer.
+     
+     - parameter filepath: Filepath of SQL database.
+     
+     - returns: A new Persistent HarrierQueue with maxConcurrentTasks of 3.
+     */
     public init(filepath: String) {
         self._maxConcurrentTasks = 3
         self.dataManager = HarrierQueueDataManager(filepath: filepath)
@@ -150,8 +167,8 @@ public class HarrierQueue: HarrierTaskDelegate {
     /**
     Queues up the task. Note: To prevent queueing duplicates, use enqueueTask()
     
-    :param: task Task to queued.
-    :param: persist Whether the task should be saved to the database.
+    - parameter  task Task to queued.
+    - parameter  persist Whether the task should be saved to the database.
     */
     public func enqueueTask(task: HarrierTask, persist: Bool = true) {
         if persist {
@@ -172,7 +189,8 @@ public class HarrierQueue: HarrierTaskDelegate {
     /**
     Enqueues a task if a task with the same uniqueIdentifier does not already exist in the queue.
     
-    :param: task Task to enqueue.
+     - parameter  task Task to enqueue.
+     - parameter  persist Whether the task should be saved to the database.
     */
     public func enqueueUniqueTask(task: HarrierTask, persist: Bool = true) {
         if persist {
@@ -190,6 +208,13 @@ public class HarrierQueue: HarrierTaskDelegate {
         }
     }
     
+    /**
+     Removes the given task from the queue.
+     
+     - parameter taskToRemove: The task to be removed.
+     
+     - returns: The task removed is successful, otherwise nil.
+     */
     public func removeTask(taskToRemove: HarrierTask) -> HarrierTask? {
         for index in 0...queuedTasks.count {
             if taskToRemove == queuedTasks[index] {
@@ -205,7 +230,14 @@ public class HarrierQueue: HarrierTaskDelegate {
         return nil
     }
     
+
     
+    /**
+     HarrierTaskDelegate Method.
+     
+     - parameter task:   The task that has completed.
+     - parameter status: The completion status of the task.
+     */
     public func taskDidCompleteWithStatus(task: HarrierTask, status: HarrierTaskCompletionStatus) {
         // Remove the task from the active queue.
         for index in 0..._activeTasks.count {
