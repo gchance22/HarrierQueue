@@ -41,6 +41,9 @@ public class HarrierQueue: HarrierTaskDelegate {
     /// The max number of tasks that can be executed at once.
     private var _maxConcurrentTasks: Int
     
+    // The delegate of the queue in charge of executing tasks
+    public var delegate: HarrierQueueDelegate
+    
     /// The max number of tasks that can be executed at once.
     public var maxConcurrentTasks: Int {
         return _maxConcurrentTasks
@@ -71,7 +74,8 @@ public class HarrierQueue: HarrierTaskDelegate {
      
      - returns: A new non-persistent HarrierQueue with maxConcurrentTasks of 3.
      */
-    public init() {
+    public init(delegate: HarrierQueueDelegate) {
+        self.delegate = delegate
         self._maxConcurrentTasks = 3
         dataManager = nil
     }
@@ -83,7 +87,8 @@ public class HarrierQueue: HarrierTaskDelegate {
      
      - returns: A new Persistent HarrierQueue with maxConcurrentTasks of 3.
      */
-    public init(filepath: String) {
+    public init(delegate: HarrierQueueDelegate, filepath: String) {
+        self.delegate = delegate
         self._maxConcurrentTasks = 3
         self.dataManager = HarrierQueueDataManager(filepath: filepath)
         if self.dataManager == nil {
@@ -105,6 +110,7 @@ public class HarrierQueue: HarrierTaskDelegate {
     
     private func dequeueTask(task: HarrierTask) {
         _activeTasks.append(task)
+        delegate.executeTask(task)
     }
     
     private func sortQueue() {

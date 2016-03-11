@@ -4,6 +4,22 @@ import HarrierQueue
 
 class Tests: XCTestCase {
     
+    class TestQueueDelegate: HarrierQueueDelegate {
+        
+        var expectation: XCTestExpectation?
+        
+        init() { }
+        
+        init(expectation: XCTestExpectation) {
+            self.expectation = expectation
+        }
+
+        func executeTask(task: HarrierTask) {
+            self.expectation?.fulfill()
+        }
+        
+    }
+    
     var dbPath : NSURL = {
         let fm = NSFileManager.defaultManager()
         let url = try! fm.URLForDirectory(NSSearchPathDirectory.CachesDirectory,
@@ -37,20 +53,15 @@ class Tests: XCTestCase {
         XCTAssert(true, "Pass")
     }
     
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measureBlock() {
-            // Put the code you want to measure the time of here.
-        }
-    }
+    
     
     func testDBFileCreation() {
-        let _ = HarrierQueue(filepath: dbPath.absoluteString)
+        let _ = HarrierQueue(delegate: TestQueueDelegate(),filepath: dbPath.absoluteString)
         XCTAssert(NSFileManager.defaultManager().fileExistsAtPath(dbPath.path!), "No DB file was created")
     }
     
     func testQueuingProcess() {
-        let harrier = HarrierQueue()
+        let harrier = HarrierQueue(delegate: TestQueueDelegate())
         let task = HarrierTask(name:"", priority: 0, taskAttributes: [:], retryLimit: 0, availabilityDate: NSDate())
         harrier.enqueueTask(task)
         XCTAssert(harrier.taskCount > 0, "Task was not queued properly")
@@ -58,7 +69,7 @@ class Tests: XCTestCase {
     
     
     func testPausingAndRestarting() {
-        let harrier = HarrierQueue()
+        let harrier = HarrierQueue(delegate: TestQueueDelegate())
         let task = HarrierTask(name:"", priority: 0, taskAttributes: [:], retryLimit: 0, availabilityDate: NSDate())
         harrier.pause()
         harrier.enqueueTask(task)
@@ -69,17 +80,29 @@ class Tests: XCTestCase {
     }
     
     func testPersistence() {
-        let harrier = HarrierQueue(filepath: dbPath.absoluteString)
+        let harrier = HarrierQueue(delegate: TestQueueDelegate(),filepath: dbPath.absoluteString)
         harrier.pause()
         let availDate = NSDate()
         let testDic = ["key":"value", "key2": "value2"]
         let task = HarrierTask(name:"", priority: 0, taskAttributes: testDic, retryLimit: 0, availabilityDate: availDate)
         harrier.enqueueTask(task)
-        let harrier2 = HarrierQueue(filepath: dbPath.absoluteString)
+        let harrier2 = HarrierQueue(delegate: TestQueueDelegate(), filepath: dbPath.absoluteString)
         XCTAssert(harrier2.taskCount == 1, "Harrier did not persist")
         if let recoveredTask = harrier2.tasks.first {
             XCTAssert(testDic == recoveredTask.data, "Harrier did not persist")
         }
+
+    }
+    
+    
+    func testExecution() {
+        let delegate = TestQueueDelegate()
+        let harrier = HarrierQueue(delegate: delegate)
+        let task = HarrierTask(name:"", priority: 0, taskAttributes: [:], retryLimit: 0, availabilityDate: NSDate())
+        let expectation = expectationWithDescription("execute task")
+        delegate.expectation = expectation
+        harrier.enqueueTask(task)
+        waitForExpectationsWithTimeout(4.0, handler:nil)
 
     }
 
