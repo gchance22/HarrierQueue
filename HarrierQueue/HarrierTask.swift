@@ -41,7 +41,6 @@ public enum HarrierTaskCompletionStatus: String {
 /**
  *  The delegate for HarrierTasks.
  */
-public protocol HarrierTaskDelegate {
 internal protocol HarrierTaskDelegate {
     func taskDidCompleteWithStatus(task: HarrierTask, status: HarrierTaskCompletionStatus)
 }
