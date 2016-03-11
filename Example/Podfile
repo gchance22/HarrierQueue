@@ -2,8 +2,8 @@ source 'https://github.com/CocoaPods/Specs.git'
 use_frameworks!
 
 
-target 'Harrier_Tests', :exclusive => true do
-  pod "HarrierQueue", :git => "https://github.com/gchance22/HarrierQueue.git"
+target 'Harrier_Tests' do
+    pod "HarrierQueue", :path => '..'
 
   
 end

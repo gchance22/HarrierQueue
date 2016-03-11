@@ -7,67 +7,142 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		05575EEDE7A6D0FD4B989687AFF77E4A /* HarrierTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA7CD05767B32EB172582695F86B6AA /* HarrierTask.swift */; };
-		09533937E7B526A3DAFD4470A950868D /* HarrierQueue-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5AF27AE97A5D04F75B51736E832FB8E2 /* HarrierQueue-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		38EBE4DB054C67584BFC769208B55412 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
-		6D6E63DFE2A8ACD588CEE8A879E5131D /* HarrierQueue-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BD262F69D1D585652B43AA4EC4744B03 /* HarrierQueue-dummy.m */; };
-		85D9440DB71DFA65F57BDC30901C8AB8 /* HarrierQueueDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F075A27A26D9116F9321CEA5079219CA /* HarrierQueueDataManager.swift */; };
-		94A62C3D0B28F1E9206FDFB83C9C8895 /* HarrierQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9955502926920BABA46933E5EED924D0 /* HarrierQueue.swift */; };
-		A6922D4186F07C9FB794A6C7261DCE14 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
-		C418DB6DFBF38384A50178735AA41FE4 /* Pods-Harrier_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6152AE3C61C6D2ADCCE8848D1A4F96C7 /* Pods-Harrier_Tests-dummy.m */; };
-		E93AFA768305BC62B46C43DBB0EDB589 /* Pods-Harrier_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 54C0C55E7BFD5C8AFF42FF18FAB1D0F3 /* Pods-Harrier_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1759F5108547ECA8595A8909C524D052 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C6E82843A51928990A3BFAFDA4D3447 /* Helpers.swift */; };
+		2086D3110BEF464CB9F976767E5BA017 /* Foundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E4944BEDA928C7D63606EE3DDACC1B /* Foundation.swift */; };
+		210253D804E3FAA496B2E7FF7D4DF814 /* CustomFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6480A7C26FCA2FC039952AD856AA6943 /* CustomFunctions.swift */; };
+		286C8539EC425A1AA9DA2EEEC5410320 /* Statement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A9C15FED564ED3022AB68D3411C75D2 /* Statement.swift */; };
+		309AF0035B0E586154C31D09475F3C63 /* FTS4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111ECBB34993E4D1E285DA3443F7293E /* FTS4.swift */; };
+		3458D9CE5470039F26131D112AD379AA /* HarrierQueue-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 957BB2659322DEDED760A7B2A33349EA /* HarrierQueue-dummy.m */; };
+		3746E7CEDFC02335CEB66109CD933960 /* Collation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7E95C04642D158F282695646E0243A /* Collation.swift */; };
+		4114AA81DFB4C435D84CC77B7D08EE81 /* Query.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC79165663BB8B97229A42F4CA8C8EC /* Query.swift */; };
+		4482B5B026AC7165B178D7A16C4A9048 /* CoreFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95CFD1B334C6D91CA0FBC1B356314A97 /* CoreFunctions.swift */; };
+		578762F8DDC2273783BDA6BA5D5FE43D /* Pods-Harrier_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 54C0C55E7BFD5C8AFF42FF18FAB1D0F3 /* Pods-Harrier_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5F6EF380051E31C902D79BBC66934824 /* SQLite.swift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E0217566D1AD276ADDE7D2CC1925391F /* SQLite.swift-dummy.m */; };
+		6F1162B3F7523F1C4AE5889D85676C7C /* fts3_tokenizer.h in Headers */ = {isa = PBXBuildFile; fileRef = D45308996D3D9DF1120173249D1005AD /* fts3_tokenizer.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		874B0D7B611F02CFF9C6BBD0511E6FDD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F875A84F402AC8B54F428E26AAA08E25 /* Foundation.framework */; };
+		90B6E80F572AC359BA5FAEC468B8061D /* HarrierTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 573AA02EF8FB0979EB5257EDFA619234 /* HarrierTask.swift */; };
+		91A5D863B5371EAC6A9B5DBEC6435714 /* HarrierQueueDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB9F1C9B749AA88DC4EA4285CF25EB66 /* HarrierQueueDataManager.swift */; };
+		936FDF686D9D6F857FEC48ED1CEB57D2 /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A22EC6C8E158914B71D59D55ABC76E /* Operators.swift */; };
+		9669CF31EDA66625985B9A9627BF075F /* SQLite-Bridging.m in Sources */ = {isa = PBXBuildFile; fileRef = 238B21EDB32146A6E0D895D7C8A2FABF /* SQLite-Bridging.m */; };
+		A6FA6F78E7BDD1C0A7329E6AC87C27A1 /* Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA27E4FFACC341F5FD5ADB0C24CEAA3E /* Schema.swift */; };
+		AE61698CE6135E793F3AE9E300286D6E /* SQLite.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F88CBEC007EB190508BC4E467C83CBC /* SQLite.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B2FA1FEC0B09E981B32381E226BBD4BE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F875A84F402AC8B54F428E26AAA08E25 /* Foundation.framework */; };
+		B39289D39EE048DE3A0077B5C79F71CF /* Connection.swift in Sources */ = {isa = PBXBuildFile; fileRef = A72225B9C83F1B51AA5D205E8001CD8A /* Connection.swift */; };
+		B47E928255AF71BB02DD44CC03B96336 /* AggregateFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EF395AF75CE9C4F00465D575DF59CB3 /* AggregateFunctions.swift */; };
+		BEE870AA2E2573CDAF2308C751DF42BA /* Value.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A6ACFCD8C5A5E897E0C2FA94803B54 /* Value.swift */; };
+		D35DBFE3ADC9CD92D1B924ACE4C8E0FE /* HarrierQueue-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B61109B1763CFB866BBFCFF6D8B74CF6 /* HarrierQueue-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D482287C81CEA7A0C829B10A2662653E /* SQLite-Bridging.h in Headers */ = {isa = PBXBuildFile; fileRef = 244E36380B4B3465B8F7B761894265FC /* SQLite-Bridging.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D8EC08F4DFD0F0D4AAC5126F79FC0A97 /* Expression.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1DEB85C813E2B64F1103C0F226B5A6D /* Expression.swift */; };
+		DA335DD0562E5B9F0C189714C0F49DDF /* HarrierQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D88F15DF6DA13C2ADF384273BCF067B /* HarrierQueue.swift */; };
+		DA6683394496F12A970E0832792CAA1B /* Setter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF26F01D79D8526882E804A3BEF0B30A /* Setter.swift */; };
+		E23CCF957F128C795AD7F5611EB9CCCF /* Pods-Harrier_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6152AE3C61C6D2ADCCE8848D1A4F96C7 /* Pods-Harrier_Tests-dummy.m */; };
+		E6310FC467632BD5392F60C8FF414718 /* SQLite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB44F0C85553660857F351B59660E399 /* SQLite.framework */; };
+		E8167220CEF57C08B7F3E9F5B8A56F7E /* R*Tree.swift in Sources */ = {isa = PBXBuildFile; fileRef = E648D070BEC06D181DFCFA23A0E62069 /* R*Tree.swift */; };
+		ED2E93497E83C451D23AED5121C2969A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F875A84F402AC8B54F428E26AAA08E25 /* Foundation.framework */; };
+		F8E0FA8848FD43DC6C213A33C8D2014E /* Blob.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83DADDA89C4433C6701DED9587CB55B /* Blob.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		7555895F911A2DFA6FDBCBC6FFAD4B19 /* PBXContainerItemProxy */ = {
+		43CC08EABAEFC4C9FF5B1CF4B6CB736E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = F9DDC44089125047EF8AB2D85D52FEC7;
+			remoteGlobalIDString = 8C1380C7387E0A5A7176841FB1EAFAC0;
 			remoteInfo = HarrierQueue;
+		};
+		90E0B195BDDFA036A33CB658712C2936 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 72D6DFD8798C44261C3D245958196C34;
+			remoteInfo = SQLite.swift;
+		};
+		C2F0397180FE1E5D0AF37B72726BBA9D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 72D6DFD8798C44261C3D245958196C34;
+			remoteInfo = SQLite.swift;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		065931727517EF0426DEEE2EAD58E28A /* HarrierQueue.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HarrierQueue.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A5EEBA351BC074648D3FE6AAAF71272 /* Pods-Harrier_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Harrier_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		0D9B45DC6E94DB85EFBEB23C51B6FD06 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1CA7F6B62E0548CE7DC5699128851E3D /* Pods_Harrier_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Harrier_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2DE232256D3133A104611C9CAE6C2621 /* HarrierQueue-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HarrierQueue-prefix.pch"; sourceTree = "<group>"; };
-		3AA7CD05767B32EB172582695F86B6AA /* HarrierTask.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HarrierTask.swift; path = HarrierQueue/HarrierTask.swift; sourceTree = "<group>"; };
-		3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		0B1118E07883A29296CD94A55D4A6D80 /* SQLite.swift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SQLite.swift.modulemap; sourceTree = "<group>"; };
+		111ECBB34993E4D1E285DA3443F7293E /* FTS4.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FTS4.swift; path = SQLite/Extensions/FTS4.swift; sourceTree = "<group>"; };
+		15F1369C7A53C14E83239FDB9BB8CDF1 /* HarrierQueue.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = HarrierQueue.xcconfig; sourceTree = "<group>"; };
+		1666710A03BCBCE4ABF650C42FBBC942 /* Pods_Harrier_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Harrier_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F88CBEC007EB190508BC4E467C83CBC /* SQLite.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SQLite.h; path = SQLite/SQLite.h; sourceTree = "<group>"; };
+		21A6ACFCD8C5A5E897E0C2FA94803B54 /* Value.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Value.swift; path = SQLite/Core/Value.swift; sourceTree = "<group>"; };
+		21F3B083F6ACA587A360DF7036326AB3 /* HarrierQueue-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HarrierQueue-prefix.pch"; sourceTree = "<group>"; };
+		238B21EDB32146A6E0D895D7C8A2FABF /* SQLite-Bridging.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "SQLite-Bridging.m"; path = "SQLite/Core/SQLite-Bridging.m"; sourceTree = "<group>"; };
+		244E36380B4B3465B8F7B761894265FC /* SQLite-Bridging.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "SQLite-Bridging.h"; path = "SQLite/Core/SQLite-Bridging.h"; sourceTree = "<group>"; };
+		2A9C15FED564ED3022AB68D3411C75D2 /* Statement.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Statement.swift; path = SQLite/Core/Statement.swift; sourceTree = "<group>"; };
+		3A34D016670CFBAC51E9591BF7B788B4 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3EF395AF75CE9C4F00465D575DF59CB3 /* AggregateFunctions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AggregateFunctions.swift; path = SQLite/Typed/AggregateFunctions.swift; sourceTree = "<group>"; };
+		45380D5DB5A0BE51434881FE0F5F0468 /* SQLite.swift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SQLite.swift.xcconfig; sourceTree = "<group>"; };
+		4D9E196ED2F33844F0444D2F73985E72 /* SQLite.swift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SQLite.swift-prefix.pch"; sourceTree = "<group>"; };
 		528DF79052CA771FF257A0F11C824C7E /* Pods-Harrier_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Harrier_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		54C0C55E7BFD5C8AFF42FF18FAB1D0F3 /* Pods-Harrier_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Harrier_Tests-umbrella.h"; sourceTree = "<group>"; };
-		5AF27AE97A5D04F75B51736E832FB8E2 /* HarrierQueue-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HarrierQueue-umbrella.h"; sourceTree = "<group>"; };
+		573AA02EF8FB0979EB5257EDFA619234 /* HarrierTask.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HarrierTask.swift; sourceTree = "<group>"; };
+		577C01104202D919774C163C0741D5B9 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5D88F15DF6DA13C2ADF384273BCF067B /* HarrierQueue.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HarrierQueue.swift; sourceTree = "<group>"; };
 		6152AE3C61C6D2ADCCE8848D1A4F96C7 /* Pods-Harrier_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Harrier_Tests-dummy.m"; sourceTree = "<group>"; };
-		71D97F44557EECF7831BC7DD20F6EAB9 /* HarrierQueue.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = HarrierQueue.xcconfig; sourceTree = "<group>"; };
+		6480A7C26FCA2FC039952AD856AA6943 /* CustomFunctions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CustomFunctions.swift; path = SQLite/Typed/CustomFunctions.swift; sourceTree = "<group>"; };
+		6C6E82843A51928990A3BFAFDA4D3447 /* Helpers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Helpers.swift; path = SQLite/Helpers.swift; sourceTree = "<group>"; };
 		83AA1CC48DFCC019DA3FC990EDEDA763 /* Pods-Harrier_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Harrier_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		8BECFD09C843A5FE722AF824D4AF893D /* Pods-Harrier_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Harrier_Tests-resources.sh"; sourceTree = "<group>"; };
-		9955502926920BABA46933E5EED924D0 /* HarrierQueue.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HarrierQueue.swift; path = HarrierQueue/HarrierQueue.swift; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		957BB2659322DEDED760A7B2A33349EA /* HarrierQueue-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "HarrierQueue-dummy.m"; sourceTree = "<group>"; };
+		95CFD1B334C6D91CA0FBC1B356314A97 /* CoreFunctions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CoreFunctions.swift; path = SQLite/Typed/CoreFunctions.swift; sourceTree = "<group>"; };
+		9CC79165663BB8B97229A42F4CA8C8EC /* Query.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Query.swift; path = SQLite/Typed/Query.swift; sourceTree = "<group>"; };
 		9DA0B4CD1FD39AB4AAEA8817C4022550 /* Pods-Harrier_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Harrier_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		A1149F49EBD1F42DAA1E1F5BFE07708B /* HarrierQueue.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = HarrierQueue.modulemap; sourceTree = "<group>"; };
 		A3D1741A7E14E0810C65FC37AE4180D9 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A60906E41FC50D1F8EFCFF48934D9EE2 /* Pods-Harrier_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Harrier_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A72225B9C83F1B51AA5D205E8001CD8A /* Connection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Connection.swift; path = SQLite/Core/Connection.swift; sourceTree = "<group>"; };
+		A9E4944BEDA928C7D63606EE3DDACC1B /* Foundation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Foundation.swift; path = SQLite/Foundation.swift; sourceTree = "<group>"; };
+		AF26F01D79D8526882E804A3BEF0B30A /* Setter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Setter.swift; path = SQLite/Typed/Setter.swift; sourceTree = "<group>"; };
+		B61109B1763CFB866BBFCFF6D8B74CF6 /* HarrierQueue-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HarrierQueue-umbrella.h"; sourceTree = "<group>"; };
+		B83DADDA89C4433C6701DED9587CB55B /* Blob.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Blob.swift; path = SQLite/Core/Blob.swift; sourceTree = "<group>"; };
 		BAE6CFBB7431CD343D495C7E1F453E28 /* Pods-Harrier_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Harrier_Tests.modulemap"; sourceTree = "<group>"; };
-		BD262F69D1D585652B43AA4EC4744B03 /* HarrierQueue-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "HarrierQueue-dummy.m"; sourceTree = "<group>"; };
-		C91EF412241EA3C7623764A1A47C8249 /* HarrierQueue.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HarrierQueue.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		DFCBF8BBC78B5855AAE9BE9D475695FA /* HarrierQueue.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = HarrierQueue.modulemap; sourceTree = "<group>"; };
-		F075A27A26D9116F9321CEA5079219CA /* HarrierQueueDataManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HarrierQueueDataManager.swift; path = HarrierQueue/HarrierQueueDataManager.swift; sourceTree = "<group>"; };
+		CB7E95C04642D158F282695646E0243A /* Collation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Collation.swift; path = SQLite/Typed/Collation.swift; sourceTree = "<group>"; };
+		D1DEB85C813E2B64F1103C0F226B5A6D /* Expression.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Expression.swift; path = SQLite/Typed/Expression.swift; sourceTree = "<group>"; };
+		D45308996D3D9DF1120173249D1005AD /* fts3_tokenizer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = fts3_tokenizer.h; path = SQLite/Core/fts3_tokenizer.h; sourceTree = "<group>"; };
+		DB44F0C85553660857F351B59660E399 /* SQLite.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SQLite.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB9F1C9B749AA88DC4EA4285CF25EB66 /* HarrierQueueDataManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HarrierQueueDataManager.swift; sourceTree = "<group>"; };
+		DFC08C701CEB28E66DE6A33582B9344B /* SQLite.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SQLite.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E0217566D1AD276ADDE7D2CC1925391F /* SQLite.swift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SQLite.swift-dummy.m"; sourceTree = "<group>"; };
+		E648D070BEC06D181DFCFA23A0E62069 /* R*Tree.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "R*Tree.swift"; path = "SQLite/Extensions/R*Tree.swift"; sourceTree = "<group>"; };
+		E9A22EC6C8E158914B71D59D55ABC76E /* Operators.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Operators.swift; path = SQLite/Typed/Operators.swift; sourceTree = "<group>"; };
+		EA27E4FFACC341F5FD5ADB0C24CEAA3E /* Schema.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Schema.swift; path = SQLite/Typed/Schema.swift; sourceTree = "<group>"; };
+		F875A84F402AC8B54F428E26AAA08E25 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		63D245E62E028854A1835DCD4706574E /* Frameworks */ = {
+		C2A0AA9C053DD07DADB31716E5013A00 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				38EBE4DB054C67584BFC769208B55412 /* Foundation.framework in Frameworks */,
+				ED2E93497E83C451D23AED5121C2969A /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6E963630AF9CF376E53B1D79C5A7CB9F /* Frameworks */ = {
+		E155F50B200464A193B39D365EF14BFB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A6922D4186F07C9FB794A6C7261DCE14 /* Foundation.framework in Frameworks */,
+				874B0D7B611F02CFF9C6BBD0511E6FDD /* Foundation.framework in Frameworks */,
+				E6310FC467632BD5392F60C8FF414718 /* SQLite.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F63E4730CF83E562C475BF9FAD19B6D9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2FA1FEC0B09E981B32381E226BBD4BE /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,59 +157,135 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		3BCB3FB6EE0D9A716156A33E154B6A6D /* Pods */ = {
+		0E9CC0217CE03B66912982F024F7C64D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				47895F766455DF9F18538FF835D85EF1 /* HarrierQueue */,
+				DB44F0C85553660857F351B59660E399 /* SQLite.framework */,
+				5CC9E4EC4D9BEA25E8015A13477B77B3 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		13E593068C430F9A043E942D297D74BE /* HarrierQueue */ = {
+			isa = PBXGroup;
+			children = (
+				4B3F4349345236A84F7CF23CD1421C9C /* HarrierQueue */,
+				9ADE2423048C6B8EBC05923C53A0CD83 /* Support Files */,
+			);
+			name = HarrierQueue;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		4B3F4349345236A84F7CF23CD1421C9C /* HarrierQueue */ = {
+			isa = PBXGroup;
+			children = (
+				5D88F15DF6DA13C2ADF384273BCF067B /* HarrierQueue.swift */,
+				DB9F1C9B749AA88DC4EA4285CF25EB66 /* HarrierQueueDataManager.swift */,
+				573AA02EF8FB0979EB5257EDFA619234 /* HarrierTask.swift */,
+			);
+			path = HarrierQueue;
+			sourceTree = "<group>";
+		};
+		4F6552BD32B96855634586A2B1D144B1 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				13E593068C430F9A043E942D297D74BE /* HarrierQueue */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		4FCA3E226138023931E8BE4B9988ABFE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				065931727517EF0426DEEE2EAD58E28A /* HarrierQueue.framework */,
+				1666710A03BCBCE4ABF650C42FBBC942 /* Pods_Harrier_Tests.framework */,
+				DFC08C701CEB28E66DE6A33582B9344B /* SQLite.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		55EC1D21DBE2EBBA621774D9A2A5A684 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FC62FBA1B2BC11E38EAC77C6A3EB3109 /* SQLite.swift */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		47895F766455DF9F18538FF835D85EF1 /* HarrierQueue */ = {
+		5CC9E4EC4D9BEA25E8015A13477B77B3 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				9955502926920BABA46933E5EED924D0 /* HarrierQueue.swift */,
-				F075A27A26D9116F9321CEA5079219CA /* HarrierQueueDataManager.swift */,
-				3AA7CD05767B32EB172582695F86B6AA /* HarrierTask.swift */,
-				FEC42D349B439EF7BE884C29B57DE04E /* Support Files */,
+				F875A84F402AC8B54F428E26AAA08E25 /* Foundation.framework */,
 			);
-			path = HarrierQueue;
+			name = iOS;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
-				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
-				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				3BCB3FB6EE0D9A716156A33E154B6A6D /* Pods */,
-				96E4001771CE0B2194238AB434B06B93 /* Products */,
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				4F6552BD32B96855634586A2B1D144B1 /* Development Pods */,
+				0E9CC0217CE03B66912982F024F7C64D /* Frameworks */,
+				55EC1D21DBE2EBBA621774D9A2A5A684 /* Pods */,
+				4FCA3E226138023931E8BE4B9988ABFE /* Products */,
 				04309AE781915982318BCA8C65EDE81D /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		96E4001771CE0B2194238AB434B06B93 /* Products */ = {
+		8655E4D3F1F68636357A41F48297CE15 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				C91EF412241EA3C7623764A1A47C8249 /* HarrierQueue.framework */,
-				1CA7F6B62E0548CE7DC5699128851E3D /* Pods_Harrier_Tests.framework */,
+				3A34D016670CFBAC51E9591BF7B788B4 /* Info.plist */,
+				0B1118E07883A29296CD94A55D4A6D80 /* SQLite.swift.modulemap */,
+				45380D5DB5A0BE51434881FE0F5F0468 /* SQLite.swift.xcconfig */,
+				E0217566D1AD276ADDE7D2CC1925391F /* SQLite.swift-dummy.m */,
+				4D9E196ED2F33844F0444D2F73985E72 /* SQLite.swift-prefix.pch */,
 			);
-			name = Products;
+			name = "Support Files";
+			path = "../Target Support Files/SQLite.swift";
 			sourceTree = "<group>";
 		};
-		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+		9ADE2423048C6B8EBC05923C53A0CD83 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				BF6342C8B29F4CEEA088EFF7AB4DE362 /* iOS */,
+				A1149F49EBD1F42DAA1E1F5BFE07708B /* HarrierQueue.modulemap */,
+				15F1369C7A53C14E83239FDB9BB8CDF1 /* HarrierQueue.xcconfig */,
+				957BB2659322DEDED760A7B2A33349EA /* HarrierQueue-dummy.m */,
+				21F3B083F6ACA587A360DF7036326AB3 /* HarrierQueue-prefix.pch */,
+				B61109B1763CFB866BBFCFF6D8B74CF6 /* HarrierQueue-umbrella.h */,
+				577C01104202D919774C163C0741D5B9 /* Info.plist */,
 			);
-			name = Frameworks;
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/HarrierQueue";
 			sourceTree = "<group>";
 		};
-		BF6342C8B29F4CEEA088EFF7AB4DE362 /* iOS */ = {
+		FC62FBA1B2BC11E38EAC77C6A3EB3109 /* SQLite.swift */ = {
 			isa = PBXGroup;
 			children = (
-				3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */,
+				3EF395AF75CE9C4F00465D575DF59CB3 /* AggregateFunctions.swift */,
+				B83DADDA89C4433C6701DED9587CB55B /* Blob.swift */,
+				CB7E95C04642D158F282695646E0243A /* Collation.swift */,
+				A72225B9C83F1B51AA5D205E8001CD8A /* Connection.swift */,
+				95CFD1B334C6D91CA0FBC1B356314A97 /* CoreFunctions.swift */,
+				6480A7C26FCA2FC039952AD856AA6943 /* CustomFunctions.swift */,
+				D1DEB85C813E2B64F1103C0F226B5A6D /* Expression.swift */,
+				A9E4944BEDA928C7D63606EE3DDACC1B /* Foundation.swift */,
+				D45308996D3D9DF1120173249D1005AD /* fts3_tokenizer.h */,
+				111ECBB34993E4D1E285DA3443F7293E /* FTS4.swift */,
+				6C6E82843A51928990A3BFAFDA4D3447 /* Helpers.swift */,
+				E9A22EC6C8E158914B71D59D55ABC76E /* Operators.swift */,
+				9CC79165663BB8B97229A42F4CA8C8EC /* Query.swift */,
+				E648D070BEC06D181DFCFA23A0E62069 /* R*Tree.swift */,
+				EA27E4FFACC341F5FD5ADB0C24CEAA3E /* Schema.swift */,
+				AF26F01D79D8526882E804A3BEF0B30A /* Setter.swift */,
+				1F88CBEC007EB190508BC4E467C83CBC /* SQLite.h */,
+				244E36380B4B3465B8F7B761894265FC /* SQLite-Bridging.h */,
+				238B21EDB32146A6E0D895D7C8A2FABF /* SQLite-Bridging.m */,
+				2A9C15FED564ED3022AB68D3411C75D2 /* Statement.swift */,
+				21A6ACFCD8C5A5E897E0C2FA94803B54 /* Value.swift */,
+				8655E4D3F1F68636357A41F48297CE15 /* Support Files */,
 			);
-			name = iOS;
+			path = SQLite.swift;
 			sourceTree = "<group>";
 		};
 		FE87E8402BF7512DF3FE59BA9DA11F3B /* Pods-Harrier_Tests */ = {
@@ -155,75 +306,90 @@
 			path = "Target Support Files/Pods-Harrier_Tests";
 			sourceTree = "<group>";
 		};
-		FEC42D349B439EF7BE884C29B57DE04E /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				DFCBF8BBC78B5855AAE9BE9D475695FA /* HarrierQueue.modulemap */,
-				71D97F44557EECF7831BC7DD20F6EAB9 /* HarrierQueue.xcconfig */,
-				BD262F69D1D585652B43AA4EC4744B03 /* HarrierQueue-dummy.m */,
-				2DE232256D3133A104611C9CAE6C2621 /* HarrierQueue-prefix.pch */,
-				5AF27AE97A5D04F75B51736E832FB8E2 /* HarrierQueue-umbrella.h */,
-				0D9B45DC6E94DB85EFBEB23C51B6FD06 /* Info.plist */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/HarrierQueue";
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		B19F1F116D41468EE4DE63E57A7A6B56 /* Headers */ = {
+		2151B47DD8D6B2D4829A073C9D2887E9 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E93AFA768305BC62B46C43DBB0EDB589 /* Pods-Harrier_Tests-umbrella.h in Headers */,
+				578762F8DDC2273783BDA6BA5D5FE43D /* Pods-Harrier_Tests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FB71BFBFF5BAE5775DD1580AB23AE4E4 /* Headers */ = {
+		59E40938FB231DEEED5918E414146B09 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				09533937E7B526A3DAFD4470A950868D /* HarrierQueue-umbrella.h in Headers */,
+				6F1162B3F7523F1C4AE5889D85676C7C /* fts3_tokenizer.h in Headers */,
+				D482287C81CEA7A0C829B10A2662653E /* SQLite-Bridging.h in Headers */,
+				AE61698CE6135E793F3AE9E300286D6E /* SQLite.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6CF7AE0C638C48FE9A4D04BA3B28A09 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D35DBFE3ADC9CD92D1B924ACE4C8E0FE /* HarrierQueue-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		D8C3519C503AACBEFFF2257951302990 /* Pods-Harrier_Tests */ = {
+		25840FD6292277FBE33CA3A3C70EEF44 /* Pods-Harrier_Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3EB288D843976C5A1D4A31049189B1E4 /* Build configuration list for PBXNativeTarget "Pods-Harrier_Tests" */;
+			buildConfigurationList = B3F7088A94F24A9605DF3C3203279735 /* Build configuration list for PBXNativeTarget "Pods-Harrier_Tests" */;
 			buildPhases = (
-				69A54CFD02B614616DAA6A2A7A3DBC22 /* Sources */,
-				6E963630AF9CF376E53B1D79C5A7CB9F /* Frameworks */,
-				B19F1F116D41468EE4DE63E57A7A6B56 /* Headers */,
+				D57F2255CBC97B82D7330CE24208413E /* Sources */,
+				C2A0AA9C053DD07DADB31716E5013A00 /* Frameworks */,
+				2151B47DD8D6B2D4829A073C9D2887E9 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				BDCEEC3EF3F77D298D6ABED594D60B8E /* PBXTargetDependency */,
+				BBFF2E8F48368EF28AD41BAE0BDF53B3 /* PBXTargetDependency */,
+				FE9F12BE0FC122022E385D5ED13A1FC7 /* PBXTargetDependency */,
 			);
 			name = "Pods-Harrier_Tests";
 			productName = "Pods-Harrier_Tests";
-			productReference = 1CA7F6B62E0548CE7DC5699128851E3D /* Pods_Harrier_Tests.framework */;
+			productReference = 1666710A03BCBCE4ABF650C42FBBC942 /* Pods_Harrier_Tests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		F9DDC44089125047EF8AB2D85D52FEC7 /* HarrierQueue */ = {
+		72D6DFD8798C44261C3D245958196C34 /* SQLite.swift */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 10ED1D3FB0ECD09CFA3DFBFF4BF76506 /* Build configuration list for PBXNativeTarget "HarrierQueue" */;
+			buildConfigurationList = 1C7871359BFBB8C127CD0184D107C0AC /* Build configuration list for PBXNativeTarget "SQLite.swift" */;
 			buildPhases = (
-				95861CFF16C60949807F45E571CA8874 /* Sources */,
-				63D245E62E028854A1835DCD4706574E /* Frameworks */,
-				FB71BFBFF5BAE5775DD1580AB23AE4E4 /* Headers */,
+				26ACF212BCD3555F574803C934904177 /* Sources */,
+				F63E4730CF83E562C475BF9FAD19B6D9 /* Frameworks */,
+				59E40938FB231DEEED5918E414146B09 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
+			name = SQLite.swift;
+			productName = SQLite.swift;
+			productReference = DFC08C701CEB28E66DE6A33582B9344B /* SQLite.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		8C1380C7387E0A5A7176841FB1EAFAC0 /* HarrierQueue */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8B2525FAD804F234B746FE4CCAA8BEE4 /* Build configuration list for PBXNativeTarget "HarrierQueue" */;
+			buildPhases = (
+				64A5BA9D9F390BB35C4D990C78F08E65 /* Sources */,
+				E155F50B200464A193B39D365EF14BFB /* Frameworks */,
+				B6CF7AE0C638C48FE9A4D04BA3B28A09 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A97317178B23872049CF3AD01CA52E6D /* PBXTargetDependency */,
+			);
 			name = HarrierQueue;
 			productName = HarrierQueue;
-			productReference = C91EF412241EA3C7623764A1A47C8249 /* HarrierQueue.framework */;
+			productReference = 065931727517EF0426DEEE2EAD58E28A /* HarrierQueue.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -232,7 +398,7 @@
 		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0700;
+				LastSwiftUpdateCheck = 0720;
 				LastUpgradeCheck = 0700;
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
@@ -243,49 +409,150 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 96E4001771CE0B2194238AB434B06B93 /* Products */;
+			productRefGroup = 4FCA3E226138023931E8BE4B9988ABFE /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				F9DDC44089125047EF8AB2D85D52FEC7 /* HarrierQueue */,
-				D8C3519C503AACBEFFF2257951302990 /* Pods-Harrier_Tests */,
+				8C1380C7387E0A5A7176841FB1EAFAC0 /* HarrierQueue */,
+				25840FD6292277FBE33CA3A3C70EEF44 /* Pods-Harrier_Tests */,
+				72D6DFD8798C44261C3D245958196C34 /* SQLite.swift */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		69A54CFD02B614616DAA6A2A7A3DBC22 /* Sources */ = {
+		26ACF212BCD3555F574803C934904177 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C418DB6DFBF38384A50178735AA41FE4 /* Pods-Harrier_Tests-dummy.m in Sources */,
+				B47E928255AF71BB02DD44CC03B96336 /* AggregateFunctions.swift in Sources */,
+				F8E0FA8848FD43DC6C213A33C8D2014E /* Blob.swift in Sources */,
+				3746E7CEDFC02335CEB66109CD933960 /* Collation.swift in Sources */,
+				B39289D39EE048DE3A0077B5C79F71CF /* Connection.swift in Sources */,
+				4482B5B026AC7165B178D7A16C4A9048 /* CoreFunctions.swift in Sources */,
+				210253D804E3FAA496B2E7FF7D4DF814 /* CustomFunctions.swift in Sources */,
+				D8EC08F4DFD0F0D4AAC5126F79FC0A97 /* Expression.swift in Sources */,
+				2086D3110BEF464CB9F976767E5BA017 /* Foundation.swift in Sources */,
+				309AF0035B0E586154C31D09475F3C63 /* FTS4.swift in Sources */,
+				1759F5108547ECA8595A8909C524D052 /* Helpers.swift in Sources */,
+				936FDF686D9D6F857FEC48ED1CEB57D2 /* Operators.swift in Sources */,
+				4114AA81DFB4C435D84CC77B7D08EE81 /* Query.swift in Sources */,
+				E8167220CEF57C08B7F3E9F5B8A56F7E /* R*Tree.swift in Sources */,
+				A6FA6F78E7BDD1C0A7329E6AC87C27A1 /* Schema.swift in Sources */,
+				DA6683394496F12A970E0832792CAA1B /* Setter.swift in Sources */,
+				9669CF31EDA66625985B9A9627BF075F /* SQLite-Bridging.m in Sources */,
+				5F6EF380051E31C902D79BBC66934824 /* SQLite.swift-dummy.m in Sources */,
+				286C8539EC425A1AA9DA2EEEC5410320 /* Statement.swift in Sources */,
+				BEE870AA2E2573CDAF2308C751DF42BA /* Value.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		95861CFF16C60949807F45E571CA8874 /* Sources */ = {
+		64A5BA9D9F390BB35C4D990C78F08E65 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6D6E63DFE2A8ACD588CEE8A879E5131D /* HarrierQueue-dummy.m in Sources */,
-				94A62C3D0B28F1E9206FDFB83C9C8895 /* HarrierQueue.swift in Sources */,
-				85D9440DB71DFA65F57BDC30901C8AB8 /* HarrierQueueDataManager.swift in Sources */,
-				05575EEDE7A6D0FD4B989687AFF77E4A /* HarrierTask.swift in Sources */,
+				3458D9CE5470039F26131D112AD379AA /* HarrierQueue-dummy.m in Sources */,
+				DA335DD0562E5B9F0C189714C0F49DDF /* HarrierQueue.swift in Sources */,
+				91A5D863B5371EAC6A9B5DBEC6435714 /* HarrierQueueDataManager.swift in Sources */,
+				90B6E80F572AC359BA5FAEC468B8061D /* HarrierTask.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D57F2255CBC97B82D7330CE24208413E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E23CCF957F128C795AD7F5611EB9CCCF /* Pods-Harrier_Tests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		BDCEEC3EF3F77D298D6ABED594D60B8E /* PBXTargetDependency */ = {
+		A97317178B23872049CF3AD01CA52E6D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SQLite.swift;
+			target = 72D6DFD8798C44261C3D245958196C34 /* SQLite.swift */;
+			targetProxy = C2F0397180FE1E5D0AF37B72726BBA9D /* PBXContainerItemProxy */;
+		};
+		BBFF2E8F48368EF28AD41BAE0BDF53B3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = HarrierQueue;
-			target = F9DDC44089125047EF8AB2D85D52FEC7 /* HarrierQueue */;
-			targetProxy = 7555895F911A2DFA6FDBCBC6FFAD4B19 /* PBXContainerItemProxy */;
+			target = 8C1380C7387E0A5A7176841FB1EAFAC0 /* HarrierQueue */;
+			targetProxy = 43CC08EABAEFC4C9FF5B1CF4B6CB736E /* PBXContainerItemProxy */;
+		};
+		FE9F12BE0FC122022E385D5ED13A1FC7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SQLite.swift;
+			target = 72D6DFD8798C44261C3D245958196C34 /* SQLite.swift */;
+			targetProxy = 90E0B195BDDFA036A33CB658712C2936 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		10DE1947DAC0ED28F6C0A9F9BD75D546 /* Release */ = {
+		03009F52374DBD24C6E8955A711DE38E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0A5EEBA351BC074648D3FE6AAAF71272 /* Pods-Harrier_Tests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Harrier_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Harrier_Tests/Pods-Harrier_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Harrier_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		0380DCC65043A9C45E468576E2B7A625 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 45380D5DB5A0BE51434881FE0F5F0468 /* SQLite.swift.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SQLite.swift/SQLite.swift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SQLite.swift/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SQLite.swift/SQLite.swift.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SQLite;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		372FF5048FF42C3A7A18B70A30D785C1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -305,7 +572,10 @@
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -319,34 +589,7 @@
 			};
 			name = Release;
 		};
-		4DC7187C8460E0E4F676083C663C11D9 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 71D97F44557EECF7831BC7DD20F6EAB9 /* HarrierQueue.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/HarrierQueue/HarrierQueue-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/HarrierQueue/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/HarrierQueue/HarrierQueue.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = HarrierQueue;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		552D02D5BA751AC2E8790D2811D496CA /* Debug */ = {
+		70F0378D63DE3D2DCC739550669BD46A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -364,10 +607,12 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
 					"DEBUG=1",
 					"$(inherited)",
 				);
@@ -385,82 +630,23 @@
 			};
 			name = Debug;
 		};
-		8E915EF3FEEC821CEF4597F48D843F76 /* Release */ = {
+		876B4895ED07BF1C18DFE4D1BEF3EC5E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0A5EEBA351BC074648D3FE6AAAF71272 /* Pods-Harrier_Tests.release.xcconfig */;
+			baseConfigurationReference = 15F1369C7A53C14E83239FDB9BB8CDF1 /* HarrierQueue.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-Harrier_Tests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Harrier_Tests/Pods-Harrier_Tests.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods_Harrier_Tests;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		B39F0FB0E38D6D81F1B213EE1A1124CF /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = A60906E41FC50D1F8EFCFF48934D9EE2 /* Pods-Harrier_Tests.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-Harrier_Tests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Harrier_Tests/Pods-Harrier_Tests.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods_Harrier_Tests;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		B40708793F277DD8E47BACF43F4E7C45 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 71D97F44557EECF7831BC7DD20F6EAB9 /* HarrierQueue.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/HarrierQueue/HarrierQueue-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/HarrierQueue/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/HarrierQueue/HarrierQueue.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
@@ -474,14 +660,107 @@
 			};
 			name = Debug;
 		};
+		C2FAB64DFBA67827AD307E237B2A9C3F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 45380D5DB5A0BE51434881FE0F5F0468 /* SQLite.swift.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SQLite.swift/SQLite.swift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SQLite.swift/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SQLite.swift/SQLite.swift.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SQLite;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F816263DF0A8BF961C7DC7EF0E7C5AE7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 15F1369C7A53C14E83239FDB9BB8CDF1 /* HarrierQueue.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/HarrierQueue/HarrierQueue-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/HarrierQueue/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/HarrierQueue/HarrierQueue.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = HarrierQueue;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F8A41482F0F837962F6437D437DB29CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A60906E41FC50D1F8EFCFF48934D9EE2 /* Pods-Harrier_Tests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Harrier_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Harrier_Tests/Pods-Harrier_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Harrier_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		10ED1D3FB0ECD09CFA3DFBFF4BF76506 /* Build configuration list for PBXNativeTarget "HarrierQueue" */ = {
+		1C7871359BFBB8C127CD0184D107C0AC /* Build configuration list for PBXNativeTarget "SQLite.swift" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B40708793F277DD8E47BACF43F4E7C45 /* Debug */,
-				4DC7187C8460E0E4F676083C663C11D9 /* Release */,
+				C2FAB64DFBA67827AD307E237B2A9C3F /* Debug */,
+				0380DCC65043A9C45E468576E2B7A625 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -489,17 +768,26 @@
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				552D02D5BA751AC2E8790D2811D496CA /* Debug */,
-				10DE1947DAC0ED28F6C0A9F9BD75D546 /* Release */,
+				70F0378D63DE3D2DCC739550669BD46A /* Debug */,
+				372FF5048FF42C3A7A18B70A30D785C1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3EB288D843976C5A1D4A31049189B1E4 /* Build configuration list for PBXNativeTarget "Pods-Harrier_Tests" */ = {
+		8B2525FAD804F234B746FE4CCAA8BEE4 /* Build configuration list for PBXNativeTarget "HarrierQueue" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B39F0FB0E38D6D81F1B213EE1A1124CF /* Debug */,
-				8E915EF3FEEC821CEF4597F48D843F76 /* Release */,
+				876B4895ED07BF1C18DFE4D1BEF3EC5E /* Debug */,
+				F816263DF0A8BF961C7DC7EF0E7C5AE7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B3F7088A94F24A9605DF3C3203279735 /* Build configuration list for PBXNativeTarget "Pods-Harrier_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F8A41482F0F837962F6437D437DB29CA /* Debug */,
+				03009F52374DBD24C6E8955A711DE38E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
