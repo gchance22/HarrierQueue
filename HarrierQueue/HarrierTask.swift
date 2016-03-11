@@ -114,7 +114,13 @@ public class HarrierTask: Equatable {
      - returns: Returns whether this task is higher priority to the given task.
      */
     public func isHigherPriority(thanTask other: HarrierTask) -> Bool {
-        return priorityLevel > other.priorityLevel || (priorityLevel == other.priorityLevel && failCount < other.failCount && dateCreated.timeIntervalSince1970 < other.dateCreated.timeIntervalSince1970)
+        if self.availabilityDate.timeIntervalSinceNow > 0 { 
+            return self.availabilityDate.timeIntervalSinceNow < other.availabilityDate.timeIntervalSinceNow
+        } else if other.availabilityDate.timeIntervalSinceNow > 0 {
+            return true
+        } else {
+            return priorityLevel > other.priorityLevel || (priorityLevel == other.priorityLevel && failCount < other.failCount && dateCreated.timeIntervalSince1970 < other.dateCreated.timeIntervalSince1970)
+        }
     }
     
     /**

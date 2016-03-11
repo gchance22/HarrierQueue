@@ -7,6 +7,7 @@ class Tests: XCTestCase {
     class TestQueueDelegate: HarrierQueueDelegate {
         
         var expectation: XCTestExpectation?
+        var dateOfExecution: NSDate?
         
         init() { }
         
@@ -15,6 +16,7 @@ class Tests: XCTestCase {
         }
 
         func executeTask(task: HarrierTask) {
+            dateOfExecution = NSDate()
             self.expectation?.fulfill()
         }
         
@@ -47,12 +49,6 @@ class Tests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
         super.tearDown()
     }
-    
-    func testExample() {
-        // This is an example of a functional test case.
-        XCTAssert(true, "Pass")
-    }
-    
     
     
     func testDBFileCreation() {
@@ -102,8 +98,21 @@ class Tests: XCTestCase {
         let expectation = expectationWithDescription("execute task")
         delegate.expectation = expectation
         harrier.enqueueTask(task)
-        waitForExpectationsWithTimeout(4.0, handler:nil)
+        waitForExpectationsWithTimeout(2.0, handler:nil)
 
+    }
+    
+    
+    func testDelayedAvailabilityDateExecution() {
+        let delegate = TestQueueDelegate()
+        let harrier = HarrierQueue(delegate: delegate)
+        let availabilityDate = NSDate(timeIntervalSinceNow: 2)
+        let task = HarrierTask(name:"", priority: 0, taskAttributes: [:], retryLimit: 0, availabilityDate: availabilityDate)
+        let expectation = expectationWithDescription("execute task")
+        delegate.expectation = expectation
+        harrier.enqueueTask(task)
+        waitForExpectationsWithTimeout(5.0, handler:nil)
+        XCTAssert(delegate.dateOfExecution?.timeIntervalSinceNow >= availabilityDate.timeIntervalSinceNow, "Task fired before its availability date")
     }
 
 }

@@ -41,8 +41,22 @@ public class HarrierQueue: HarrierTaskDelegate {
     /// The max number of tasks that can be executed at once.
     private var _maxConcurrentTasks: Int
     
+    private var pollingTimer: NSTimer?
+    
+    // Whether the next highest priority task is ready to run
+    private var validNextTask: Bool {
+        if queuedTasks.count > 0 {
+            if queuedTasks.last!.availabilityDate.timeIntervalSinceNow <= 0 {
+                return true
+            }
+        }
+        return false
+    }
+    
     // The delegate of the queue in charge of executing tasks
     public var delegate: HarrierQueueDelegate
+    
+    public var pollingTime: Double = 3.0
     
     /// The max number of tasks that can be executed at once.
     public var maxConcurrentTasks: Int {
@@ -102,8 +116,19 @@ public class HarrierQueue: HarrierTaskDelegate {
         }
     }
     
-    private func dequeueNextTask() {
-        if queuedTasks.count > 0 {
+    
+    private func dequeueNextTask(){
+        if validNextTask {
+            dequeueTask(queuedTasks.removeLast())
+        } else if queuedTasks.count > 0 {
+            pollingTimer = NSTimer.scheduledTimerWithTimeInterval(pollingTime, target: self, selector: Selector("pollingTimerFired"), userInfo: nil, repeats: true)
+        }
+    }
+    
+    
+    @objc private func pollingTimerFired() {
+        if validNextTask {
+            pollingTimer?.invalidate()
             dequeueTask(queuedTasks.removeLast())
         }
     }
