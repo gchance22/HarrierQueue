@@ -4,7 +4,7 @@ Harrier Queue is a persistent task queue written in Swift.
 
 ## Usage
 ```swift
-let queue = HarrierQueue(filepath: "path/to/save/db.sqlite")
+let queue = HarrierQueue(delegate: delegate, filepath: "path/to/save/db.sqlite")
 let task = HarrierTask(name:"A task", priority: 0, taskAttributes: ["key1": "value", "key2": "value"], retryLimit: 3, availabilityDate: NSDate())
 queue.enqueueTask(task)
 ```
