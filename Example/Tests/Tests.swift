@@ -114,5 +114,17 @@ class Tests: XCTestCase {
         waitForExpectationsWithTimeout(5.0, handler:nil)
         XCTAssert(delegate.dateOfExecution?.timeIntervalSinceNow >= availabilityDate.timeIntervalSinceNow, "Task fired before its availability date")
     }
+    
+    
+    func testTaskPriorities() {
+        let task1 = HarrierTask(name:"", priority: 0, taskAttributes: [:], retryLimit: 0, availabilityDate: NSDate())
+        var task2 = HarrierTask(name:"", priority: 1, taskAttributes: [:], retryLimit: 0, availabilityDate: NSDate())
+        XCTAssert(task1.isHigherPriority(thanTask: task2) == false, "Priority numbers are not working for tasks")
+
+        task2 = HarrierTask(name:"", priority: 1, taskAttributes: [:], retryLimit: 0, availabilityDate: NSDate().dateByAddingTimeInterval(10))
+        XCTAssert(task1.isHigherPriority(thanTask: task2) == true, "A task with a future availability date is being prioritized over a task with a past availability date")
+
+        // doesnt test fail count prioritization
+    }
 
 }
