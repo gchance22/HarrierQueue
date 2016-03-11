@@ -19,9 +19,9 @@ public let kNoRetryLimit = -1
  - Done:    Done running.
  */
 public enum HarrierTaskStatus: String {
-    case Waiting = "Waiting"
-    case Running = "Running"
-    case Done    = "Success"
+    case Waiting
+    case Running
+    case Done
 }
 
 /**
@@ -32,9 +32,9 @@ public enum HarrierTaskStatus: String {
  - Abandon: Task has been abandoned, i.e. not completed, but will not be attempted again.
  */
 public enum HarrierTaskCompletionStatus: String {
-    case Success = "Success"
-    case Failed = "Failed"
-    case Abandon = "Abandon"
+    case Success
+    case Failed
+    case Abandon
 }
 
 
@@ -42,6 +42,7 @@ public enum HarrierTaskCompletionStatus: String {
  *  The delegate for HarrierTasks.
  */
 public protocol HarrierTaskDelegate {
+internal protocol HarrierTaskDelegate {
     func taskDidCompleteWithStatus(task: HarrierTask, status: HarrierTaskCompletionStatus)
 }
 
