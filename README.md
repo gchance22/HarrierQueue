@@ -1,6 +1,5 @@
 # Harrier Queue
 Harrier Queue is a persistent task queue written in Swift.
-##### "As this bird has a wide distribution, it will take whatever prey is available in the area where it nests [and add them to its task queue]" - Wikipedia
 
 ## Usage
 ```swift
